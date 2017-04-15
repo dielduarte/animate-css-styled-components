@@ -1,0 +1,19 @@
+{
+  "name": "animate-css-styled-components",
+  "version": "0.0.1",
+  "description": "port of animate.css for styled-components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dielduarte/animate-css-styled-components.git"
+  },
+  "author": "Diel Duarte",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dielduarte/animate-css-styled-components/issues"
+  },
+  "homepage": "https://github.com/dielduarte/animate-css-styled-components#readme"
+}
