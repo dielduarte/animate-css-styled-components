@@ -21,4 +21,3 @@ const ZoomInDown = styled(BaseAnimation)`
 `;
 
 export default ZoomInDown;
-;

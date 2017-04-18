@@ -22,4 +22,3 @@ const ZoomOut = styled(BaseAnimation)`
 `;
 
 export default ZoomOut;
-;

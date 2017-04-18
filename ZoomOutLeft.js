@@ -20,4 +20,3 @@ const ZoomOutLeft = styled(BaseAnimation)`
 `;
 
 export default ZoomOutLeft;
-;

@@ -18,4 +18,3 @@ const ZoomIn = styled(BaseAnimation)`
 `;
 
 export default ZoomIn;
-;
