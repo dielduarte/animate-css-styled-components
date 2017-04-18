@@ -1,9 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
-const glob_entries = require('webpack-glob-entries')
 
 module.exports = {
-  entry: glob_entries('./src/**/*.js', '!./src/animations/BaseAnimation.js'),
+  entry: './main.js',
   module: {
     rules: [
       {
@@ -17,7 +16,7 @@ module.exports = {
     ],
   },
   output: {
-    filename: '[name].js',
+    filename: 'index.js',
     path: path.resolve(__dirname),
     libraryTarget: 'umd'
   }
