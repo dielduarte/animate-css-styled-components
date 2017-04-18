@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator!</title>
+        <script src="../../lib/nearley.js"></script>
+        <script src="grammar.js"></script>
+        <style type="text/css">
+            html, body {
+                margin: 0; padding: 0;
+                font-size: 14pt;
+                font-family: sans-serif;
+                height: 100%;
+            }
+            #main {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 40em;
+                text-align: center;
+                height: 100%;
+                display: table;
+            }
+            .vertically-centered {
+                display: table-cell;
+                height: 100%;
+                vertical-align: middle;
+            }
+            #input {
+                border: none;
+                border-bottom: 1px solid gray;
+                font-family: menlo, monaco, monospace;
+                font-size: 14pt;
+                text-align: center;
+                width: 30em;
+            }
+            input:focus {
+                outline: none;
+            }
+            a, a:visited {
+                color: #348;
+            }
+            a:hover {
+                color: #56a;
+            }
+
+            #help {
+                color: #888;
+                font-size: 0.7em;
+            }
+            #info {
+                color: #888;
+                font-size: 0.8em;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+           <div class="vertically-centered">
+               <input  id="input" autofocus type="text" placeholder="3+4*ln(e+pi^2)"></input><br/>
+               <span id="help">Enter an expression and hit &lt;enter&gt;.</span><br/>
+               <span id="info">Made with <a href="http://github.com/Hardmath123/nearley">nearley</a>.</span>
+           </div>
+        </div>
+
+        <script>
+            window.addEventListener("load", function() {
+                var inp = document.getElementById("input");
+                
+                function evaluate() {
+                    inp.style.color = "inherit";
+                    var p = new nearley.Parser(arithmetic.ParserRules, arithmetic.ParserStart)
+                    try {
+                        p.feed(inp.value);
+                        if (!p.results[0]) {
+                            throw new Error();
+                        }
+                        if (isNaN(p.results[0]) || p.results[0] === Infinity) {
+                            throw new Error();
+                        }
+                        inp.value = p.results[0].toString();
+                    } catch(e) {
+                        inp.value = "[error]";
+                        inp.style.color = "red";
+                        inp.select();
+                    }
+                }
+                inp.addEventListener("change", evaluate, false);
+                inp.addEventListener("keydown", function() {
+                    inp.style.color = "inherit";
+                }, false);
+            });
+    </script>
+    </body>
+</html>
