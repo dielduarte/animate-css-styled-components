@@ -1,36 +1,26 @@
-import styled, { keyframes } from 'styled-components';
-import BaseAnimation from './BaseAnimation';
+'use strict';
 
-const bounceInDownAnimation = keyframes`
-  from, 60%, 75%, 90%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-  }
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-  0% {
-    opacity: 0;
-    transform: translate3d(0, -3000px, 0);
-  }
+var _templateObject = _taggedTemplateLiteral(['\n  from, 60%, 75%, 90%, to {\n    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);\n  }\n\n  0% {\n    opacity: 0;\n    transform: translate3d(0, -3000px, 0);\n  }\n\n  60% {\n    opacity: 1;\n    transform: translate3d(0, 25px, 0);\n  }\n\n  75% {\n    transform: translate3d(0, -10px, 0);\n  }\n\n  90% {\n    transform: translate3d(0, 5px, 0);\n  }\n\n  to {\n    transform: none;\n  }\n'], ['\n  from, 60%, 75%, 90%, to {\n    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);\n  }\n\n  0% {\n    opacity: 0;\n    transform: translate3d(0, -3000px, 0);\n  }\n\n  60% {\n    opacity: 1;\n    transform: translate3d(0, 25px, 0);\n  }\n\n  75% {\n    transform: translate3d(0, -10px, 0);\n  }\n\n  90% {\n    transform: translate3d(0, 5px, 0);\n  }\n\n  to {\n    transform: none;\n  }\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  animation-name: ', ';\n'], ['\n  animation-name: ', ';\n']);
 
-  60% {
-    opacity: 1;
-    transform: translate3d(0, 25px, 0);
-  }
+var _styledComponents = require('styled-components');
 
-  75% {
-    transform: translate3d(0, -10px, 0);
-  }
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-  90% {
-    transform: translate3d(0, 5px, 0);
-  }
+var _BaseAnimation = require('./BaseAnimation');
 
-  to {
-    transform: none;
-  }
-`;
+var _BaseAnimation2 = _interopRequireDefault(_BaseAnimation);
 
-const BounceInDown = styled(BaseAnimation)`
-  animation-name: ${bounceInDownAnimation};
-`;
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-export default BounceInDown;
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var bounceInDownAnimation = (0, _styledComponents.keyframes)(_templateObject);
+
+var BounceInDown = (0, _styledComponents2.default)(_BaseAnimation2.default)(_templateObject2, bounceInDownAnimation);
+
+exports.default = BounceInDown;

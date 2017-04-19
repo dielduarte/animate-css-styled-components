@@ -1,25 +1,26 @@
-import styled, { keyframes } from 'styled-components';
-import BaseAnimation from './BaseAnimation';
+'use strict';
 
-const FlipOutXAnimation = keyframes`
-  from {
-    transform: perspective(400px);
-  }
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-  30% {
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    opacity: 1;
-  }
+var _templateObject = _taggedTemplateLiteral(['\n  from {\n    transform: perspective(400px);\n  }\n\n  30% {\n    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    opacity: 1;\n  }\n\n  to {\n    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    opacity: 0;\n  }\n'], ['\n  from {\n    transform: perspective(400px);\n  }\n\n  30% {\n    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    opacity: 1;\n  }\n\n  to {\n    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    opacity: 0;\n  }\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  animation-name: ', ';\n  backface-visibility: visible !important;\n'], ['\n  animation-name: ', ';\n  backface-visibility: visible !important;\n']);
 
-  to {
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    opacity: 0;
-  }
-`;
+var _styledComponents = require('styled-components');
 
-const FlipOutX = styled(BaseAnimation)`
-  animation-name: ${FlipOutXAnimation};
-  backface-visibility: visible !important;
-`;
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-export default FlipOutX;
+var _BaseAnimation = require('./BaseAnimation');
+
+var _BaseAnimation2 = _interopRequireDefault(_BaseAnimation);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var FlipOutXAnimation = (0, _styledComponents.keyframes)(_templateObject);
+
+var FlipOutX = (0, _styledComponents2.default)(_BaseAnimation2.default)(_templateObject2, FlipOutXAnimation);
+
+exports.default = FlipOutX;

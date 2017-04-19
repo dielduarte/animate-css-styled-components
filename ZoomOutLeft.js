@@ -1,22 +1,26 @@
+'use strict';
 
-import styled, { keyframes } from 'styled-components';
-import BaseAnimation from './BaseAnimation';
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-const ZoomOutLeftAnimation = keyframes`
-  40% {
-      opacity: 1;
-      transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
-    }
+var _templateObject = _taggedTemplateLiteral(['\n  40% {\n      opacity: 1;\n      transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);\n    }\n\n    to {\n      opacity: 0;\n      transform: scale(.1) translate3d(-2000px, 0, 0);\n      transform-origin: left center;\n    }\n'], ['\n  40% {\n      opacity: 1;\n      transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);\n    }\n\n    to {\n      opacity: 0;\n      transform: scale(.1) translate3d(-2000px, 0, 0);\n      transform-origin: left center;\n    }\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  animation-name: ', ';\n'], ['\n  animation-name: ', ';\n']);
 
-    to {
-      opacity: 0;
-      transform: scale(.1) translate3d(-2000px, 0, 0);
-      transform-origin: left center;
-    }
-`;
+var _styledComponents = require('styled-components');
 
-const ZoomOutLeft = styled(BaseAnimation)`
-  animation-name: ${ZoomOutLeftAnimation};
-`;
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-export default ZoomOutLeft;
+var _BaseAnimation = require('./BaseAnimation');
+
+var _BaseAnimation2 = _interopRequireDefault(_BaseAnimation);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var ZoomOutLeftAnimation = (0, _styledComponents.keyframes)(_templateObject);
+
+var ZoomOutLeft = (0, _styledComponents2.default)(_BaseAnimation2.default)(_templateObject2, ZoomOutLeftAnimation);
+
+exports.default = ZoomOutLeft;

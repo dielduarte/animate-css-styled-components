@@ -1,21 +1,26 @@
-import styled, { keyframes } from 'styled-components';
-import BaseAnimation from './BaseAnimation';
+'use strict';
 
-const RotateOutAnimation = keyframes`
-  from {
-      transform-origin: center;
-      opacity: 1;
-    }
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-    to {
-      transform-origin: center;
-      transform: rotate3d(0, 0, 1, 200deg);
-      opacity: 0;
-    }
-`;
+var _templateObject = _taggedTemplateLiteral(['\n  from {\n      transform-origin: center;\n      opacity: 1;\n    }\n\n    to {\n      transform-origin: center;\n      transform: rotate3d(0, 0, 1, 200deg);\n      opacity: 0;\n    }\n'], ['\n  from {\n      transform-origin: center;\n      opacity: 1;\n    }\n\n    to {\n      transform-origin: center;\n      transform: rotate3d(0, 0, 1, 200deg);\n      opacity: 0;\n    }\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  animation-name: ', ';\n'], ['\n  animation-name: ', ';\n']);
 
-const RotateOut = styled(BaseAnimation)`
-  animation-name: ${RotateOutAnimation};
-`;
+var _styledComponents = require('styled-components');
 
-export default RotateOut;
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _BaseAnimation = require('./BaseAnimation');
+
+var _BaseAnimation2 = _interopRequireDefault(_BaseAnimation);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var RotateOutAnimation = (0, _styledComponents.keyframes)(_templateObject);
+
+var RotateOut = (0, _styledComponents2.default)(_BaseAnimation2.default)(_templateObject2, RotateOutAnimation);
+
+exports.default = RotateOut;

@@ -1,31 +1,26 @@
-import styled, { keyframes } from 'styled-components';
-import BaseAnimation from './BaseAnimation';
+'use strict';
 
-const SwingAnimation = keyframes`
-  20% {
-    transform: rotate3d(0, 0, 1, 15deg);
-  }
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-  40% {
-    transform: rotate3d(0, 0, 1, -10deg);
-  }
+var _templateObject = _taggedTemplateLiteral(['\n  20% {\n    transform: rotate3d(0, 0, 1, 15deg);\n  }\n\n  40% {\n    transform: rotate3d(0, 0, 1, -10deg);\n  }\n\n  60% {\n    transform: rotate3d(0, 0, 1, 5deg);\n  }\n\n  80% {\n    transform: rotate3d(0, 0, 1, -5deg);\n  }\n\n  to {\n    transform: rotate3d(0, 0, 1, 0deg);\n  }\n'], ['\n  20% {\n    transform: rotate3d(0, 0, 1, 15deg);\n  }\n\n  40% {\n    transform: rotate3d(0, 0, 1, -10deg);\n  }\n\n  60% {\n    transform: rotate3d(0, 0, 1, 5deg);\n  }\n\n  80% {\n    transform: rotate3d(0, 0, 1, -5deg);\n  }\n\n  to {\n    transform: rotate3d(0, 0, 1, 0deg);\n  }\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  animation-name: ', ';\n  transform-origin: top center;\n'], ['\n  animation-name: ', ';\n  transform-origin: top center;\n']);
 
-  60% {
-    transform: rotate3d(0, 0, 1, 5deg);
-  }
+var _styledComponents = require('styled-components');
 
-  80% {
-    transform: rotate3d(0, 0, 1, -5deg);
-  }
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-  to {
-    transform: rotate3d(0, 0, 1, 0deg);
-  }
-`;
+var _BaseAnimation = require('./BaseAnimation');
 
-const Swing = styled(BaseAnimation)`
-  animation-name: ${SwingAnimation};
-  transform-origin: top center;
-`;
+var _BaseAnimation2 = _interopRequireDefault(_BaseAnimation);
 
-export default Swing;
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var SwingAnimation = (0, _styledComponents.keyframes)(_templateObject);
+
+var Swing = (0, _styledComponents2.default)(_BaseAnimation2.default)(_templateObject2, SwingAnimation);
+
+exports.default = Swing;

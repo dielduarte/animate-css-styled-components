@@ -1,38 +1,26 @@
-import styled, { keyframes } from 'styled-components';
-import BaseAnimation from './BaseAnimation';
+'use strict';
 
-const WobbleAnimation = keyframes`
-  from {
-    transform: none;
-  }
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-  15% {
-    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
-  }
+var _templateObject = _taggedTemplateLiteral(['\n  from {\n    transform: none;\n  }\n\n  15% {\n    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);\n  }\n\n  30% {\n    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);\n  }\n\n  45% {\n    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);\n  }\n\n  60% {\n    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);\n  }\n\n  75% {\n    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);\n  }\n\n  to {\n    transform: none;\n  }\n'], ['\n  from {\n    transform: none;\n  }\n\n  15% {\n    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);\n  }\n\n  30% {\n    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);\n  }\n\n  45% {\n    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);\n  }\n\n  60% {\n    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);\n  }\n\n  75% {\n    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);\n  }\n\n  to {\n    transform: none;\n  }\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  animation-name: ', ';\n'], ['\n  animation-name: ', ';\n']);
 
-  30% {
-    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
-  }
+var _styledComponents = require('styled-components');
 
-  45% {
-    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
-  }
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-  60% {
-    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
-  }
+var _BaseAnimation = require('./BaseAnimation');
 
-  75% {
-    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
-  }
+var _BaseAnimation2 = _interopRequireDefault(_BaseAnimation);
 
-  to {
-    transform: none;
-  }
-`;
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const Wobble = styled(BaseAnimation)`
-  animation-name: ${WobbleAnimation};
-`;
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-export default Wobble;
+var WobbleAnimation = (0, _styledComponents.keyframes)(_templateObject);
+
+var Wobble = (0, _styledComponents2.default)(_BaseAnimation2.default)(_templateObject2, WobbleAnimation);
+
+exports.default = Wobble;

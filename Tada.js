@@ -1,30 +1,26 @@
-import styled, { keyframes } from 'styled-components';
-import BaseAnimation from './BaseAnimation';
+'use strict';
 
-const TadaAnimation = keyframes`
-  from {
-    transform: scale3d(1, 1, 1);
-  }
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-  10%, 20% {
-    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-  }
+var _templateObject = _taggedTemplateLiteral(['\n  from {\n    transform: scale3d(1, 1, 1);\n  }\n\n  10%, 20% {\n    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);\n  }\n\n  30%, 50%, 70%, 90% {\n    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);\n  }\n\n  40%, 60%, 80% {\n    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);\n  }\n\n  to {\n    transform: scale3d(1, 1, 1);\n  }\n'], ['\n  from {\n    transform: scale3d(1, 1, 1);\n  }\n\n  10%, 20% {\n    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);\n  }\n\n  30%, 50%, 70%, 90% {\n    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);\n  }\n\n  40%, 60%, 80% {\n    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);\n  }\n\n  to {\n    transform: scale3d(1, 1, 1);\n  }\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  animation-name: ', ';\n'], ['\n  animation-name: ', ';\n']);
 
-  30%, 50%, 70%, 90% {
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-  }
+var _styledComponents = require('styled-components');
 
-  40%, 60%, 80% {
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-  }
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-  to {
-    transform: scale3d(1, 1, 1);
-  }
-`;
+var _BaseAnimation = require('./BaseAnimation');
 
-const Tada = styled(BaseAnimation)`
-  animation-name: ${TadaAnimation};
-`;
+var _BaseAnimation2 = _interopRequireDefault(_BaseAnimation);
 
-export default Tada;
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var TadaAnimation = (0, _styledComponents.keyframes)(_templateObject);
+
+var Tada = (0, _styledComponents2.default)(_BaseAnimation2.default)(_templateObject2, TadaAnimation);
+
+exports.default = Tada;

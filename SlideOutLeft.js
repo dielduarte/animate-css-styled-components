@@ -1,19 +1,26 @@
-import styled, { keyframes } from 'styled-components';
-import BaseAnimation from './BaseAnimation';
+'use strict';
 
-const SlideOutLeftAnimation = keyframes`
-  from {
-      transform: translate3d(0, 0, 0);
-    }
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-    to {
-      visibility: hidden;
-      transform: translate3d(-100%, 0, 0);
-    }
-`;
+var _templateObject = _taggedTemplateLiteral(['\n  from {\n      transform: translate3d(0, 0, 0);\n    }\n\n    to {\n      visibility: hidden;\n      transform: translate3d(-100%, 0, 0);\n    }\n'], ['\n  from {\n      transform: translate3d(0, 0, 0);\n    }\n\n    to {\n      visibility: hidden;\n      transform: translate3d(-100%, 0, 0);\n    }\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  animation-name: ', ';\n'], ['\n  animation-name: ', ';\n']);
 
-const SlideOutLeft = styled(BaseAnimation)`
-  animation-name: ${SlideOutLeftAnimation};
-`;
+var _styledComponents = require('styled-components');
 
-export default SlideOutLeft;
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _BaseAnimation = require('./BaseAnimation');
+
+var _BaseAnimation2 = _interopRequireDefault(_BaseAnimation);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var SlideOutLeftAnimation = (0, _styledComponents.keyframes)(_templateObject);
+
+var SlideOutLeft = (0, _styledComponents2.default)(_BaseAnimation2.default)(_templateObject2, SlideOutLeftAnimation);
+
+exports.default = SlideOutLeft;

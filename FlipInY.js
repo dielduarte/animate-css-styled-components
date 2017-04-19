@@ -1,35 +1,26 @@
-import styled, { keyframes } from 'styled-components';
-import BaseAnimation from './BaseAnimation';
+'use strict';
 
-const FlipInYAnimation = keyframes`
-  from {
-      transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-      animation-timing-function: ease-in;
-      opacity: 0;
-    }
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-    40% {
-      transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
-      animation-timing-function: ease-in;
-    }
+var _templateObject = _taggedTemplateLiteral(['\n  from {\n      transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n      animation-timing-function: ease-in;\n      opacity: 0;\n    }\n\n    40% {\n      transform: perspective(400px) rotate3d(0, 1, 0, -20deg);\n      animation-timing-function: ease-in;\n    }\n\n    60% {\n      transform: perspective(400px) rotate3d(0, 1, 0, 10deg);\n      opacity: 1;\n    }\n\n    80% {\n      transform: perspective(400px) rotate3d(0, 1, 0, -5deg);\n    }\n\n    to {\n      transform: perspective(400px);\n    }\n'], ['\n  from {\n      transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n      animation-timing-function: ease-in;\n      opacity: 0;\n    }\n\n    40% {\n      transform: perspective(400px) rotate3d(0, 1, 0, -20deg);\n      animation-timing-function: ease-in;\n    }\n\n    60% {\n      transform: perspective(400px) rotate3d(0, 1, 0, 10deg);\n      opacity: 1;\n    }\n\n    80% {\n      transform: perspective(400px) rotate3d(0, 1, 0, -5deg);\n    }\n\n    to {\n      transform: perspective(400px);\n    }\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  animation-name: ', ';\n  backface-visibility: visible !important;\n'], ['\n  animation-name: ', ';\n  backface-visibility: visible !important;\n']);
 
-    60% {
-      transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
-      opacity: 1;
-    }
+var _styledComponents = require('styled-components');
 
-    80% {
-      transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-    }
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-    to {
-      transform: perspective(400px);
-    }
-`;
+var _BaseAnimation = require('./BaseAnimation');
 
-const FlipInY = styled(BaseAnimation)`
-  animation-name: ${FlipInYAnimation};
-  backface-visibility: visible !important;
-`;
+var _BaseAnimation2 = _interopRequireDefault(_BaseAnimation);
 
-export default FlipInY;
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var FlipInYAnimation = (0, _styledComponents.keyframes)(_templateObject);
+
+var FlipInY = (0, _styledComponents2.default)(_BaseAnimation2.default)(_templateObject2, FlipInYAnimation);
+
+exports.default = FlipInY;

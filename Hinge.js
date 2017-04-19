@@ -1,33 +1,26 @@
-import styled, { keyframes } from 'styled-components';
-import BaseAnimation from './BaseAnimation';
+'use strict';
 
-const HingeAnimation = keyframes`
-  0% {
-    transform-origin: top left;
-    animation-timing-function: ease-in-out;
-  }
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-  20%, 60% {
-    transform: rotate3d(0, 0, 1, 80deg);
-    transform-origin: top left;
-    animation-timing-function: ease-in-out;
-  }
+var _templateObject = _taggedTemplateLiteral(['\n  0% {\n    transform-origin: top left;\n    animation-timing-function: ease-in-out;\n  }\n\n  20%, 60% {\n    transform: rotate3d(0, 0, 1, 80deg);\n    transform-origin: top left;\n    animation-timing-function: ease-in-out;\n  }\n\n  40%, 80% {\n    transform: rotate3d(0, 0, 1, 60deg);\n    transform-origin: top left;\n    animation-timing-function: ease-in-out;\n    opacity: 1;\n  }\n\n  to {\n    transform: translate3d(0, 700px, 0);\n    opacity: 0;\n  }\n'], ['\n  0% {\n    transform-origin: top left;\n    animation-timing-function: ease-in-out;\n  }\n\n  20%, 60% {\n    transform: rotate3d(0, 0, 1, 80deg);\n    transform-origin: top left;\n    animation-timing-function: ease-in-out;\n  }\n\n  40%, 80% {\n    transform: rotate3d(0, 0, 1, 60deg);\n    transform-origin: top left;\n    animation-timing-function: ease-in-out;\n    opacity: 1;\n  }\n\n  to {\n    transform: translate3d(0, 700px, 0);\n    opacity: 0;\n  }\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  animation-name: ', ';\n'], ['\n  animation-name: ', ';\n']);
 
-  40%, 80% {
-    transform: rotate3d(0, 0, 1, 60deg);
-    transform-origin: top left;
-    animation-timing-function: ease-in-out;
-    opacity: 1;
-  }
+var _styledComponents = require('styled-components');
 
-  to {
-    transform: translate3d(0, 700px, 0);
-    opacity: 0;
-  }
-`;
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-const Hinge = styled(BaseAnimation)`
-  animation-name: ${HingeAnimation};
-`;
+var _BaseAnimation = require('./BaseAnimation');
 
-export default Hinge;
+var _BaseAnimation2 = _interopRequireDefault(_BaseAnimation);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var HingeAnimation = (0, _styledComponents.keyframes)(_templateObject);
+
+var Hinge = (0, _styledComponents2.default)(_BaseAnimation2.default)(_templateObject2, HingeAnimation);
+
+exports.default = Hinge;

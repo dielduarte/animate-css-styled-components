@@ -1,22 +1,26 @@
-import styled, { keyframes } from 'styled-components';
-import BaseAnimation from './BaseAnimation';
+'use strict';
 
-const PulseAnimation = keyframes`
-  from {
-    transform: scale3d(1, 1, 1);
-  }
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-  50% {
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
+var _templateObject = _taggedTemplateLiteral(['\n  from {\n    transform: scale3d(1, 1, 1);\n  }\n\n  50% {\n    transform: scale3d(1.05, 1.05, 1.05);\n  }\n\n  to {\n    transform: scale3d(1, 1, 1);\n  }\n'], ['\n  from {\n    transform: scale3d(1, 1, 1);\n  }\n\n  50% {\n    transform: scale3d(1.05, 1.05, 1.05);\n  }\n\n  to {\n    transform: scale3d(1, 1, 1);\n  }\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  animation-name: ', ';\n'], ['\n  animation-name: ', ';\n']);
 
-  to {
-    transform: scale3d(1, 1, 1);
-  }
-`;
+var _styledComponents = require('styled-components');
 
-const Pulse = styled(BaseAnimation)`
-  animation-name: ${PulseAnimation};
-`;
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-export default Pulse;
+var _BaseAnimation = require('./BaseAnimation');
+
+var _BaseAnimation2 = _interopRequireDefault(_BaseAnimation);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var PulseAnimation = (0, _styledComponents.keyframes)(_templateObject);
+
+var Pulse = (0, _styledComponents2.default)(_BaseAnimation2.default)(_templateObject2, PulseAnimation);
+
+exports.default = Pulse;
