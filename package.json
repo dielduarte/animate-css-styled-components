@@ -4,7 +4,7 @@
   "description": "port of animate.css for styled-components",
   "main": "./index.js",
   "scripts": {
-    "build": "babel animations -d ./"
+    "build": "babel src -d ./"
   },
   "repository": {
     "type": "git",
