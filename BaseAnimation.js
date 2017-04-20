@@ -15,21 +15,32 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var BaseAnimation = _styledComponents2.default.div(_templateObject, function (props) {
-  return props.duration ? props.duration : '1s';
+  return props.duration;
 }, function (props) {
-  return props.timingFunction ? props.timingFunction : 'ease';
+  return props.timingFunction;
 }, function (props) {
-  return props.delay ? props.delay : '0s';
+  return props.delay;
 }, function (props) {
-  return props.iterationCount ? props.iterationCount : '1';
+  return props.iterationCount;
 }, function (props) {
-  return props.direction ? props.direction : 'normal';
+  return props.direction;
 }, function (props) {
-  return props.fillMode ? props.fillMode : 'both';
+  return props.fillMode;
 }, function (props) {
-  return props.playState ? props.playState : 'running';
+  return props.playState;
 }, function (props) {
-  return props.inline ? 'inline-block' : 'initial';
+  return props.inline;
 });
+
+BaseAnimation.defaultProps = {
+  duration: '1s',
+  timingFunction: 'ease',
+  delay: '0s',
+  iterationCount: '1',
+  direction: 'normal',
+  fillMode: 'both',
+  playState: 'running',
+  inline: 'initial'
+};
 
 exports.default = BaseAnimation;
