@@ -14,7 +14,7 @@ install animate-css-styled-components
 
 ## How to use
 
-import animate-css-styled-components module called global animations or a specific animation
+import animate-css-styled-components module calling global animations or a specific animation
 
 ```
 import { Wobble, FadeIn, FadeOut } from 'animate-css-styled-components';
