@@ -1,92 +1,92 @@
+import Flash from './Attention/Flash';
+import HeadShake from './Attention/HeadShake';
+import Jello from './Attention/Jello';
+import Pulse from './Attention/Pulse';
+import RubberBand from './Attention/RubberBand';
+import Shake from './Attention/Shake';
+import Swing from './Attention/Swing';
+import Tada from './Attention/Tada';
+import Wobble from './Attention/Wobble';
+
 import Bounce from './Bounce';
-import Flash from './Flash';
-import HeadShake from './HeadShake';
-import Jello from './Jello';
-import Pulse from './Pulse';
-import RubberBand from './RubberBand';
-import Shake from './Shake';
-import Swing from './Swing';
-import Tada from './Tada';
-import Wobble from './Wobble';
+import BounceIn from './Bounce/In';
+import BounceInUp from './Bounce/InUp';
+import BounceInDown from './Bounce/InDown';
+import BounceInLeft from './Bounce/InLeft';
+import BounceInRight from './Bounce/InRight';
 
-import BounceIn from './BounceIn';
-import BounceInUp from './BounceInUp';
-import BounceInDown from './BounceInDown';
-import BounceInLeft from './BounceInLeft';
-import BounceInRight from './BounceInRight';
+import BounceOut from './Bounce/Out';
+import BounceOutDown from './Bounce/OutDown';
+import BounceOutLeft from './Bounce/OutLeft';
+import BounceOutRight from './Bounce/OutRight';
+import BounceOutUp from './Bounce/OutUp';
 
-import BounceOut from './BounceOut';
-import BounceOutDown from './BounceOutDown';
-import BounceOutLeft from './BounceOutLeft';
-import BounceOutRight from './BounceOutRight';
-import BounceOutUp from './BounceOutUp';
+import FadeIn from './Fade/In';
+import FadeInDown from './Fade/InDown';
+import FadeInDownBig from './Fade/InDownBig';
+import FadeInLeft from './Fade/InLeft';
+import FadeInLeftBig from './Fade/InLeftBig';
+import FadeInRight from './Fade/InRight';
+import FadeInRightBig from './Fade/InRightBig';
+import FadeInUp from './Fade/InUp';
+import FadeInUpBig from './Fade/InUpBig';
 
-import FadeIn from './FadeIn';
-import FadeInDown from './FadeInDown';
-import FadeInDownBig from './FadeInDownBig';
-import FadeInLeft from './FadeInLeft';
-import FadeInLeftBig from './FadeInLeftBig';
-import FadeInRight from './FadeInRight';
-import FadeInRightBig from './FadeInRightBig';
-import FadeInUp from './FadeInUp';
-import FadeInUpBig from './FadeInUpBig';
-
-import FadeOut from './FadeOut';
-import FadeOutDown from './FadeOutDown';
-import FadeOutDownBig from './FadeOutDownBig';
-import FadeOutLeft from './FadeOutLeft';
-import FadeOutLeftBig from './FadeOutLeftBig';
-import FadeOutRight from './FadeOutRight';
-import FadeOutRightBig from './FadeOutRightBig';
-import FadeOutUp from './FadeOutUp';
-import FadeOutUpBig from './FadeOutUpBig';
+import FadeOut from './Fade/Out';
+import FadeOutDown from './Fade/OutDown';
+import FadeOutDownBig from './Fade/OutDownBig';
+import FadeOutLeft from './Fade/OutLeft';
+import FadeOutLeftBig from './Fade/OutLeftBig';
+import FadeOutRight from './Fade/OutRight';
+import FadeOutRightBig from './Fade/OutRightBig';
+import FadeOutUp from './Fade/OutUp';
+import FadeOutUpBig from './Fade/OutUpBig';
 
 import Flip from './Flip';
-import FlipInX from './FlipInX';
-import FlipInY from './FlipInY';
-import FlipOutX from './FlipOutX';
-import FlipOutY from './FlipOutY';
+import FlipInX from './Flip/InX';
+import FlipInY from './Flip/InY';
+import FlipOutX from './Flip/OutX';
+import FlipOutY from './Flip/OutY';
 
-import LightSpeedIn from './LightSpeedIn';
-import LightSpeedOut from './LightSpeedOut';
+import LightSpeedIn from './LightSpeed/In';
+import LightSpeedOut from './LightSpeed/Out';
 
-import RotateIn from './RotateIn';
-import RotateInDownLeft from './RotateInDownLeft';
-import RotateInDownRight from './RotateInDownRight';
-import RotateInUpLeft from './RotateInUpLeft';
-import RotateInUpRight from './RotateInUpRight';
+import RotateIn from './Rotate/In';
+import RotateInDownLeft from './Rotate/InDownLeft';
+import RotateInDownRight from './Rotate/InDownRight';
+import RotateInUpLeft from './Rotate/InUpLeft';
+import RotateInUpRight from './Rotate/InUpRight';
 
-import RotateOut from './RotateOut';
-import RotateOutDownLeft from './RotateOutDownLeft';
-import RotateOutDownRight from './RotateOutDownRight';
-import RotateOutUpLeft from './RotateOutUpLeft';
-import RotateOutUpRight from './RotateOutUpRight';
+import RotateOut from './Rotate/Out';
+import RotateOutDownLeft from './Rotate/OutDownLeft';
+import RotateOutDownRight from './Rotate/OutDownRight';
+import RotateOutUpLeft from './Rotate/OutUpLeft';
+import RotateOutUpRight from './Rotate/OutUpRight';
 
-import SlideInDown from './SlideInDown';
-import SlideInLeft from './SlideInLeft';
-import SlideInRight from './SlideInRight';
-import SlideInUp from './SlideInUp';
+import SlideInDown from './Slide/InDown';
+import SlideInLeft from './Slide/InLeft';
+import SlideInRight from './Slide/InRight';
+import SlideInUp from './Slide/InUp';
 
-import SlideOutDown from './SlideOutDown';
-import SlideOutLeft from './SlideOutLeft';
-import SlideOutRight from './SlideOutRight';
-import SlideOutUp from './SlideOutUp';
+import SlideOutDown from './Slide/OutDown';
+import SlideOutLeft from './Slide/OutLeft';
+import SlideOutRight from './Slide/OutRight';
+import SlideOutUp from './Slide/OutUp';
 
-import Hinge from './Hinge';
-import RollIn from './RollIn';
-import RollOut from './RollOut';
+import Hinge from './Especials/Hinge';
+import RollIn from './Especials/RollIn';
+import RollOut from './Especials/RollOut';
 
-import ZoomIn from './ZoomIn';
-import ZoomInDown from './ZoomInDown';
-import ZoomInLeft from './ZoomInLeft';
-import ZoomInRight from './ZoomInRight';
-import ZoomInUp from './ZoomInUp';
+import ZoomIn from './Zoom/In';
+import ZoomInDown from './Zoom/InDown';
+import ZoomInLeft from './Zoom/InLeft';
+import ZoomInRight from './Zoom/InRight';
+import ZoomInUp from './Zoom/InUp';
 
-import ZoomOut from './ZoomOut';
-import ZoomOutDown from './ZoomOutDown';
-import ZoomOutLeft from './ZoomOutLeft';
-import ZoomOutRight from './ZoomOutRight';
-import ZoomOutUp from './ZoomOutUp';
+import ZoomOut from './Zoom/Out';
+import ZoomOutDown from './Zoom/OutDown';
+import ZoomOutLeft from './Zoom/OutLeft';
+import ZoomOutRight from './Zoom/OutRight';
+import ZoomOutUp from './Zoom/OutUp';
 
 export {
   Bounce,

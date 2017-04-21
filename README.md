@@ -23,8 +23,11 @@ import { Wobble, FadeIn, FadeOut } from 'animate-css-styled-components';
 or
 
 ```
-import Wobble from 'animate-css-styled-components/Wobble';
+import Wobble from 'animate-css-styled-components/Especials/Wobble';
 ```
+
+
+###### See how import specifics animations [here](https://github.com/dielduarte/animate-css-styled-components/docs/specif-animations).
 
 Now, this animation is a component and you can encompassing the desired content within the component.
 
@@ -66,7 +69,7 @@ Example:
 	 - default `inline-block`
 
 
-#WIP
+# WIP
  - tests with jest
  - storybook with examples of all animations.
  - `animate` component, wrapper for all animations with a only component.

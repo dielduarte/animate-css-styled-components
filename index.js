@@ -5,309 +5,309 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ZoomOutUp = exports.ZoomOutRight = exports.ZoomOutLeft = exports.ZoomOutDown = exports.ZoomOut = exports.ZoomInUp = exports.ZoomInRight = exports.ZoomInLeft = exports.ZoomInDown = exports.ZoomIn = exports.RollOut = exports.RollIn = exports.Hinge = exports.SlideOutUp = exports.SlideOutRight = exports.SlideOutLeft = exports.SlideOutDown = exports.SlideInUp = exports.SlideInRight = exports.SlideInLeft = exports.SlideInDown = exports.RotateOutUpRight = exports.RotateOutUpLeft = exports.RotateOutDownRight = exports.RotateOutDownLeft = exports.RotateOut = exports.RotateInUpRight = exports.RotateInUpLeft = exports.RotateInDownRight = exports.RotateInDownLeft = exports.RotateIn = exports.LightSpeedOut = exports.LightSpeedIn = exports.FlipOutY = exports.FlipOutX = exports.FlipInY = exports.FlipInX = exports.Flip = exports.FadeOutUpBig = exports.FadeOutUp = exports.FadeOutRightBig = exports.FadeOutRight = exports.FadeOutLeftBig = exports.FadeOutLeft = exports.FadeOutDownBig = exports.FadeOutDown = exports.FadeOut = exports.FadeInUpBig = exports.FadeInUp = exports.FadeInRightBig = exports.FadeInRight = exports.FadeInLeftBig = exports.FadeInLeft = exports.FadeInDownBig = exports.FadeInDown = exports.FadeIn = exports.BounceOutUp = exports.BounceOutRight = exports.BounceOutLeft = exports.BounceOutDown = exports.BounceOut = exports.BounceInRight = exports.BounceInLeft = exports.BounceInDown = exports.BounceInUp = exports.BounceIn = exports.Wobble = exports.Tada = exports.Swing = exports.Shake = exports.RubberBand = exports.Pulse = exports.Jello = exports.HeadShake = exports.Flash = exports.Bounce = undefined;
 
+var _Flash = require('./Attention/Flash');
+
+var _Flash2 = _interopRequireDefault(_Flash);
+
+var _HeadShake = require('./Attention/HeadShake');
+
+var _HeadShake2 = _interopRequireDefault(_HeadShake);
+
+var _Jello = require('./Attention/Jello');
+
+var _Jello2 = _interopRequireDefault(_Jello);
+
+var _Pulse = require('./Attention/Pulse');
+
+var _Pulse2 = _interopRequireDefault(_Pulse);
+
+var _RubberBand = require('./Attention/RubberBand');
+
+var _RubberBand2 = _interopRequireDefault(_RubberBand);
+
+var _Shake = require('./Attention/Shake');
+
+var _Shake2 = _interopRequireDefault(_Shake);
+
+var _Swing = require('./Attention/Swing');
+
+var _Swing2 = _interopRequireDefault(_Swing);
+
+var _Tada = require('./Attention/Tada');
+
+var _Tada2 = _interopRequireDefault(_Tada);
+
+var _Wobble = require('./Attention/Wobble');
+
+var _Wobble2 = _interopRequireDefault(_Wobble);
+
 var _Bounce = require('./Bounce');
 
 var _Bounce2 = _interopRequireDefault(_Bounce);
 
-var _Flash = require('./Flash');
+var _In = require('./Bounce/In');
 
-var _Flash2 = _interopRequireDefault(_Flash);
+var _In2 = _interopRequireDefault(_In);
 
-var _HeadShake = require('./HeadShake');
+var _InUp = require('./Bounce/InUp');
 
-var _HeadShake2 = _interopRequireDefault(_HeadShake);
+var _InUp2 = _interopRequireDefault(_InUp);
 
-var _Jello = require('./Jello');
+var _InDown = require('./Bounce/InDown');
 
-var _Jello2 = _interopRequireDefault(_Jello);
+var _InDown2 = _interopRequireDefault(_InDown);
 
-var _Pulse = require('./Pulse');
+var _InLeft = require('./Bounce/InLeft');
 
-var _Pulse2 = _interopRequireDefault(_Pulse);
+var _InLeft2 = _interopRequireDefault(_InLeft);
 
-var _RubberBand = require('./RubberBand');
+var _InRight = require('./Bounce/InRight');
 
-var _RubberBand2 = _interopRequireDefault(_RubberBand);
+var _InRight2 = _interopRequireDefault(_InRight);
 
-var _Shake = require('./Shake');
+var _Out = require('./Bounce/Out');
 
-var _Shake2 = _interopRequireDefault(_Shake);
+var _Out2 = _interopRequireDefault(_Out);
 
-var _Swing = require('./Swing');
+var _OutDown = require('./Bounce/OutDown');
 
-var _Swing2 = _interopRequireDefault(_Swing);
+var _OutDown2 = _interopRequireDefault(_OutDown);
 
-var _Tada = require('./Tada');
+var _OutLeft = require('./Bounce/OutLeft');
 
-var _Tada2 = _interopRequireDefault(_Tada);
+var _OutLeft2 = _interopRequireDefault(_OutLeft);
 
-var _Wobble = require('./Wobble');
+var _OutRight = require('./Bounce/OutRight');
 
-var _Wobble2 = _interopRequireDefault(_Wobble);
+var _OutRight2 = _interopRequireDefault(_OutRight);
 
-var _BounceIn = require('./BounceIn');
+var _OutUp = require('./Bounce/OutUp');
 
-var _BounceIn2 = _interopRequireDefault(_BounceIn);
+var _OutUp2 = _interopRequireDefault(_OutUp);
 
-var _BounceInUp = require('./BounceInUp');
+var _In3 = require('./Fade/In');
 
-var _BounceInUp2 = _interopRequireDefault(_BounceInUp);
+var _In4 = _interopRequireDefault(_In3);
 
-var _BounceInDown = require('./BounceInDown');
+var _InDown3 = require('./Fade/InDown');
 
-var _BounceInDown2 = _interopRequireDefault(_BounceInDown);
+var _InDown4 = _interopRequireDefault(_InDown3);
 
-var _BounceInLeft = require('./BounceInLeft');
+var _InDownBig = require('./Fade/InDownBig');
 
-var _BounceInLeft2 = _interopRequireDefault(_BounceInLeft);
+var _InDownBig2 = _interopRequireDefault(_InDownBig);
 
-var _BounceInRight = require('./BounceInRight');
+var _InLeft3 = require('./Fade/InLeft');
 
-var _BounceInRight2 = _interopRequireDefault(_BounceInRight);
+var _InLeft4 = _interopRequireDefault(_InLeft3);
 
-var _BounceOut = require('./BounceOut');
+var _InLeftBig = require('./Fade/InLeftBig');
 
-var _BounceOut2 = _interopRequireDefault(_BounceOut);
+var _InLeftBig2 = _interopRequireDefault(_InLeftBig);
 
-var _BounceOutDown = require('./BounceOutDown');
+var _InRight3 = require('./Fade/InRight');
 
-var _BounceOutDown2 = _interopRequireDefault(_BounceOutDown);
+var _InRight4 = _interopRequireDefault(_InRight3);
 
-var _BounceOutLeft = require('./BounceOutLeft');
+var _InRightBig = require('./Fade/InRightBig');
 
-var _BounceOutLeft2 = _interopRequireDefault(_BounceOutLeft);
+var _InRightBig2 = _interopRequireDefault(_InRightBig);
 
-var _BounceOutRight = require('./BounceOutRight');
+var _InUp3 = require('./Fade/InUp');
 
-var _BounceOutRight2 = _interopRequireDefault(_BounceOutRight);
+var _InUp4 = _interopRequireDefault(_InUp3);
 
-var _BounceOutUp = require('./BounceOutUp');
+var _InUpBig = require('./Fade/InUpBig');
 
-var _BounceOutUp2 = _interopRequireDefault(_BounceOutUp);
+var _InUpBig2 = _interopRequireDefault(_InUpBig);
 
-var _FadeIn = require('./FadeIn');
+var _Out3 = require('./Fade/Out');
 
-var _FadeIn2 = _interopRequireDefault(_FadeIn);
+var _Out4 = _interopRequireDefault(_Out3);
 
-var _FadeInDown = require('./FadeInDown');
+var _OutDown3 = require('./Fade/OutDown');
 
-var _FadeInDown2 = _interopRequireDefault(_FadeInDown);
+var _OutDown4 = _interopRequireDefault(_OutDown3);
 
-var _FadeInDownBig = require('./FadeInDownBig');
+var _OutDownBig = require('./Fade/OutDownBig');
 
-var _FadeInDownBig2 = _interopRequireDefault(_FadeInDownBig);
+var _OutDownBig2 = _interopRequireDefault(_OutDownBig);
 
-var _FadeInLeft = require('./FadeInLeft');
+var _OutLeft3 = require('./Fade/OutLeft');
 
-var _FadeInLeft2 = _interopRequireDefault(_FadeInLeft);
+var _OutLeft4 = _interopRequireDefault(_OutLeft3);
 
-var _FadeInLeftBig = require('./FadeInLeftBig');
+var _OutLeftBig = require('./Fade/OutLeftBig');
 
-var _FadeInLeftBig2 = _interopRequireDefault(_FadeInLeftBig);
+var _OutLeftBig2 = _interopRequireDefault(_OutLeftBig);
 
-var _FadeInRight = require('./FadeInRight');
+var _OutRight3 = require('./Fade/OutRight');
 
-var _FadeInRight2 = _interopRequireDefault(_FadeInRight);
+var _OutRight4 = _interopRequireDefault(_OutRight3);
 
-var _FadeInRightBig = require('./FadeInRightBig');
+var _OutRightBig = require('./Fade/OutRightBig');
 
-var _FadeInRightBig2 = _interopRequireDefault(_FadeInRightBig);
+var _OutRightBig2 = _interopRequireDefault(_OutRightBig);
 
-var _FadeInUp = require('./FadeInUp');
+var _OutUp3 = require('./Fade/OutUp');
 
-var _FadeInUp2 = _interopRequireDefault(_FadeInUp);
+var _OutUp4 = _interopRequireDefault(_OutUp3);
 
-var _FadeInUpBig = require('./FadeInUpBig');
+var _OutUpBig = require('./Fade/OutUpBig');
 
-var _FadeInUpBig2 = _interopRequireDefault(_FadeInUpBig);
-
-var _FadeOut = require('./FadeOut');
-
-var _FadeOut2 = _interopRequireDefault(_FadeOut);
-
-var _FadeOutDown = require('./FadeOutDown');
-
-var _FadeOutDown2 = _interopRequireDefault(_FadeOutDown);
-
-var _FadeOutDownBig = require('./FadeOutDownBig');
-
-var _FadeOutDownBig2 = _interopRequireDefault(_FadeOutDownBig);
-
-var _FadeOutLeft = require('./FadeOutLeft');
-
-var _FadeOutLeft2 = _interopRequireDefault(_FadeOutLeft);
-
-var _FadeOutLeftBig = require('./FadeOutLeftBig');
-
-var _FadeOutLeftBig2 = _interopRequireDefault(_FadeOutLeftBig);
-
-var _FadeOutRight = require('./FadeOutRight');
-
-var _FadeOutRight2 = _interopRequireDefault(_FadeOutRight);
-
-var _FadeOutRightBig = require('./FadeOutRightBig');
-
-var _FadeOutRightBig2 = _interopRequireDefault(_FadeOutRightBig);
-
-var _FadeOutUp = require('./FadeOutUp');
-
-var _FadeOutUp2 = _interopRequireDefault(_FadeOutUp);
-
-var _FadeOutUpBig = require('./FadeOutUpBig');
-
-var _FadeOutUpBig2 = _interopRequireDefault(_FadeOutUpBig);
+var _OutUpBig2 = _interopRequireDefault(_OutUpBig);
 
 var _Flip = require('./Flip');
 
 var _Flip2 = _interopRequireDefault(_Flip);
 
-var _FlipInX = require('./FlipInX');
+var _InX = require('./Flip/InX');
 
-var _FlipInX2 = _interopRequireDefault(_FlipInX);
+var _InX2 = _interopRequireDefault(_InX);
 
-var _FlipInY = require('./FlipInY');
+var _InY = require('./Flip/InY');
 
-var _FlipInY2 = _interopRequireDefault(_FlipInY);
+var _InY2 = _interopRequireDefault(_InY);
 
-var _FlipOutX = require('./FlipOutX');
+var _OutX = require('./Flip/OutX');
 
-var _FlipOutX2 = _interopRequireDefault(_FlipOutX);
+var _OutX2 = _interopRequireDefault(_OutX);
 
-var _FlipOutY = require('./FlipOutY');
+var _OutY = require('./Flip/OutY');
 
-var _FlipOutY2 = _interopRequireDefault(_FlipOutY);
+var _OutY2 = _interopRequireDefault(_OutY);
 
-var _LightSpeedIn = require('./LightSpeedIn');
+var _In5 = require('./LightSpeed/In');
 
-var _LightSpeedIn2 = _interopRequireDefault(_LightSpeedIn);
+var _In6 = _interopRequireDefault(_In5);
 
-var _LightSpeedOut = require('./LightSpeedOut');
+var _Out5 = require('./LightSpeed/Out');
 
-var _LightSpeedOut2 = _interopRequireDefault(_LightSpeedOut);
+var _Out6 = _interopRequireDefault(_Out5);
 
-var _RotateIn = require('./RotateIn');
+var _In7 = require('./Rotate/In');
 
-var _RotateIn2 = _interopRequireDefault(_RotateIn);
+var _In8 = _interopRequireDefault(_In7);
 
-var _RotateInDownLeft = require('./RotateInDownLeft');
+var _InDownLeft = require('./Rotate/InDownLeft');
 
-var _RotateInDownLeft2 = _interopRequireDefault(_RotateInDownLeft);
+var _InDownLeft2 = _interopRequireDefault(_InDownLeft);
 
-var _RotateInDownRight = require('./RotateInDownRight');
+var _InDownRight = require('./Rotate/InDownRight');
 
-var _RotateInDownRight2 = _interopRequireDefault(_RotateInDownRight);
+var _InDownRight2 = _interopRequireDefault(_InDownRight);
 
-var _RotateInUpLeft = require('./RotateInUpLeft');
+var _InUpLeft = require('./Rotate/InUpLeft');
 
-var _RotateInUpLeft2 = _interopRequireDefault(_RotateInUpLeft);
+var _InUpLeft2 = _interopRequireDefault(_InUpLeft);
 
-var _RotateInUpRight = require('./RotateInUpRight');
+var _InUpRight = require('./Rotate/InUpRight');
 
-var _RotateInUpRight2 = _interopRequireDefault(_RotateInUpRight);
+var _InUpRight2 = _interopRequireDefault(_InUpRight);
 
-var _RotateOut = require('./RotateOut');
+var _Out7 = require('./Rotate/Out');
 
-var _RotateOut2 = _interopRequireDefault(_RotateOut);
+var _Out8 = _interopRequireDefault(_Out7);
 
-var _RotateOutDownLeft = require('./RotateOutDownLeft');
+var _OutDownLeft = require('./Rotate/OutDownLeft');
 
-var _RotateOutDownLeft2 = _interopRequireDefault(_RotateOutDownLeft);
+var _OutDownLeft2 = _interopRequireDefault(_OutDownLeft);
 
-var _RotateOutDownRight = require('./RotateOutDownRight');
+var _OutDownRight = require('./Rotate/OutDownRight');
 
-var _RotateOutDownRight2 = _interopRequireDefault(_RotateOutDownRight);
+var _OutDownRight2 = _interopRequireDefault(_OutDownRight);
 
-var _RotateOutUpLeft = require('./RotateOutUpLeft');
+var _OutUpLeft = require('./Rotate/OutUpLeft');
 
-var _RotateOutUpLeft2 = _interopRequireDefault(_RotateOutUpLeft);
+var _OutUpLeft2 = _interopRequireDefault(_OutUpLeft);
 
-var _RotateOutUpRight = require('./RotateOutUpRight');
+var _OutUpRight = require('./Rotate/OutUpRight');
 
-var _RotateOutUpRight2 = _interopRequireDefault(_RotateOutUpRight);
+var _OutUpRight2 = _interopRequireDefault(_OutUpRight);
 
-var _SlideInDown = require('./SlideInDown');
+var _InDown5 = require('./Slide/InDown');
 
-var _SlideInDown2 = _interopRequireDefault(_SlideInDown);
+var _InDown6 = _interopRequireDefault(_InDown5);
 
-var _SlideInLeft = require('./SlideInLeft');
+var _InLeft5 = require('./Slide/InLeft');
 
-var _SlideInLeft2 = _interopRequireDefault(_SlideInLeft);
+var _InLeft6 = _interopRequireDefault(_InLeft5);
 
-var _SlideInRight = require('./SlideInRight');
+var _InRight5 = require('./Slide/InRight');
 
-var _SlideInRight2 = _interopRequireDefault(_SlideInRight);
+var _InRight6 = _interopRequireDefault(_InRight5);
 
-var _SlideInUp = require('./SlideInUp');
+var _InUp5 = require('./Slide/InUp');
 
-var _SlideInUp2 = _interopRequireDefault(_SlideInUp);
+var _InUp6 = _interopRequireDefault(_InUp5);
 
-var _SlideOutDown = require('./SlideOutDown');
+var _OutDown5 = require('./Slide/OutDown');
 
-var _SlideOutDown2 = _interopRequireDefault(_SlideOutDown);
+var _OutDown6 = _interopRequireDefault(_OutDown5);
 
-var _SlideOutLeft = require('./SlideOutLeft');
+var _OutLeft5 = require('./Slide/OutLeft');
 
-var _SlideOutLeft2 = _interopRequireDefault(_SlideOutLeft);
+var _OutLeft6 = _interopRequireDefault(_OutLeft5);
 
-var _SlideOutRight = require('./SlideOutRight');
+var _OutRight5 = require('./Slide/OutRight');
 
-var _SlideOutRight2 = _interopRequireDefault(_SlideOutRight);
+var _OutRight6 = _interopRequireDefault(_OutRight5);
 
-var _SlideOutUp = require('./SlideOutUp');
+var _OutUp5 = require('./Slide/OutUp');
 
-var _SlideOutUp2 = _interopRequireDefault(_SlideOutUp);
+var _OutUp6 = _interopRequireDefault(_OutUp5);
 
-var _Hinge = require('./Hinge');
+var _Hinge = require('./Especials/Hinge');
 
 var _Hinge2 = _interopRequireDefault(_Hinge);
 
-var _RollIn = require('./RollIn');
+var _RollIn = require('./Especials/RollIn');
 
 var _RollIn2 = _interopRequireDefault(_RollIn);
 
-var _RollOut = require('./RollOut');
+var _RollOut = require('./Especials/RollOut');
 
 var _RollOut2 = _interopRequireDefault(_RollOut);
 
-var _ZoomIn = require('./ZoomIn');
+var _In9 = require('./Zoom/In');
 
-var _ZoomIn2 = _interopRequireDefault(_ZoomIn);
+var _In10 = _interopRequireDefault(_In9);
 
-var _ZoomInDown = require('./ZoomInDown');
+var _InDown7 = require('./Zoom/InDown');
 
-var _ZoomInDown2 = _interopRequireDefault(_ZoomInDown);
+var _InDown8 = _interopRequireDefault(_InDown7);
 
-var _ZoomInLeft = require('./ZoomInLeft');
+var _InLeft7 = require('./Zoom/InLeft');
 
-var _ZoomInLeft2 = _interopRequireDefault(_ZoomInLeft);
+var _InLeft8 = _interopRequireDefault(_InLeft7);
 
-var _ZoomInRight = require('./ZoomInRight');
+var _InRight7 = require('./Zoom/InRight');
 
-var _ZoomInRight2 = _interopRequireDefault(_ZoomInRight);
+var _InRight8 = _interopRequireDefault(_InRight7);
 
-var _ZoomInUp = require('./ZoomInUp');
+var _InUp7 = require('./Zoom/InUp');
 
-var _ZoomInUp2 = _interopRequireDefault(_ZoomInUp);
+var _InUp8 = _interopRequireDefault(_InUp7);
 
-var _ZoomOut = require('./ZoomOut');
+var _Out9 = require('./Zoom/Out');
 
-var _ZoomOut2 = _interopRequireDefault(_ZoomOut);
+var _Out10 = _interopRequireDefault(_Out9);
 
-var _ZoomOutDown = require('./ZoomOutDown');
+var _OutDown7 = require('./Zoom/OutDown');
 
-var _ZoomOutDown2 = _interopRequireDefault(_ZoomOutDown);
+var _OutDown8 = _interopRequireDefault(_OutDown7);
 
-var _ZoomOutLeft = require('./ZoomOutLeft');
+var _OutLeft7 = require('./Zoom/OutLeft');
 
-var _ZoomOutLeft2 = _interopRequireDefault(_ZoomOutLeft);
+var _OutLeft8 = _interopRequireDefault(_OutLeft7);
 
-var _ZoomOutRight = require('./ZoomOutRight');
+var _OutRight7 = require('./Zoom/OutRight');
 
-var _ZoomOutRight2 = _interopRequireDefault(_ZoomOutRight);
+var _OutRight8 = _interopRequireDefault(_OutRight7);
 
-var _ZoomOutUp = require('./ZoomOutUp');
+var _OutUp7 = require('./Zoom/OutUp');
 
-var _ZoomOutUp2 = _interopRequireDefault(_ZoomOutUp);
+var _OutUp8 = _interopRequireDefault(_OutUp7);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -321,69 +321,69 @@ exports.Shake = _Shake2.default;
 exports.Swing = _Swing2.default;
 exports.Tada = _Tada2.default;
 exports.Wobble = _Wobble2.default;
-exports.BounceIn = _BounceIn2.default;
-exports.BounceInUp = _BounceInUp2.default;
-exports.BounceInDown = _BounceInDown2.default;
-exports.BounceInLeft = _BounceInLeft2.default;
-exports.BounceInRight = _BounceInRight2.default;
-exports.BounceOut = _BounceOut2.default;
-exports.BounceOutDown = _BounceOutDown2.default;
-exports.BounceOutLeft = _BounceOutLeft2.default;
-exports.BounceOutRight = _BounceOutRight2.default;
-exports.BounceOutUp = _BounceOutUp2.default;
-exports.FadeIn = _FadeIn2.default;
-exports.FadeInDown = _FadeInDown2.default;
-exports.FadeInDownBig = _FadeInDownBig2.default;
-exports.FadeInLeft = _FadeInLeft2.default;
-exports.FadeInLeftBig = _FadeInLeftBig2.default;
-exports.FadeInRight = _FadeInRight2.default;
-exports.FadeInRightBig = _FadeInRightBig2.default;
-exports.FadeInUp = _FadeInUp2.default;
-exports.FadeInUpBig = _FadeInUpBig2.default;
-exports.FadeOut = _FadeOut2.default;
-exports.FadeOutDown = _FadeOutDown2.default;
-exports.FadeOutDownBig = _FadeOutDownBig2.default;
-exports.FadeOutLeft = _FadeOutLeft2.default;
-exports.FadeOutLeftBig = _FadeOutLeftBig2.default;
-exports.FadeOutRight = _FadeOutRight2.default;
-exports.FadeOutRightBig = _FadeOutRightBig2.default;
-exports.FadeOutUp = _FadeOutUp2.default;
-exports.FadeOutUpBig = _FadeOutUpBig2.default;
+exports.BounceIn = _In2.default;
+exports.BounceInUp = _InUp2.default;
+exports.BounceInDown = _InDown2.default;
+exports.BounceInLeft = _InLeft2.default;
+exports.BounceInRight = _InRight2.default;
+exports.BounceOut = _Out2.default;
+exports.BounceOutDown = _OutDown2.default;
+exports.BounceOutLeft = _OutLeft2.default;
+exports.BounceOutRight = _OutRight2.default;
+exports.BounceOutUp = _OutUp2.default;
+exports.FadeIn = _In4.default;
+exports.FadeInDown = _InDown4.default;
+exports.FadeInDownBig = _InDownBig2.default;
+exports.FadeInLeft = _InLeft4.default;
+exports.FadeInLeftBig = _InLeftBig2.default;
+exports.FadeInRight = _InRight4.default;
+exports.FadeInRightBig = _InRightBig2.default;
+exports.FadeInUp = _InUp4.default;
+exports.FadeInUpBig = _InUpBig2.default;
+exports.FadeOut = _Out4.default;
+exports.FadeOutDown = _OutDown4.default;
+exports.FadeOutDownBig = _OutDownBig2.default;
+exports.FadeOutLeft = _OutLeft4.default;
+exports.FadeOutLeftBig = _OutLeftBig2.default;
+exports.FadeOutRight = _OutRight4.default;
+exports.FadeOutRightBig = _OutRightBig2.default;
+exports.FadeOutUp = _OutUp4.default;
+exports.FadeOutUpBig = _OutUpBig2.default;
 exports.Flip = _Flip2.default;
-exports.FlipInX = _FlipInX2.default;
-exports.FlipInY = _FlipInY2.default;
-exports.FlipOutX = _FlipOutX2.default;
-exports.FlipOutY = _FlipOutY2.default;
-exports.LightSpeedIn = _LightSpeedIn2.default;
-exports.LightSpeedOut = _LightSpeedOut2.default;
-exports.RotateIn = _RotateIn2.default;
-exports.RotateInDownLeft = _RotateInDownLeft2.default;
-exports.RotateInDownRight = _RotateInDownRight2.default;
-exports.RotateInUpLeft = _RotateInUpLeft2.default;
-exports.RotateInUpRight = _RotateInUpRight2.default;
-exports.RotateOut = _RotateOut2.default;
-exports.RotateOutDownLeft = _RotateOutDownLeft2.default;
-exports.RotateOutDownRight = _RotateOutDownRight2.default;
-exports.RotateOutUpLeft = _RotateOutUpLeft2.default;
-exports.RotateOutUpRight = _RotateOutUpRight2.default;
-exports.SlideInDown = _SlideInDown2.default;
-exports.SlideInLeft = _SlideInLeft2.default;
-exports.SlideInRight = _SlideInRight2.default;
-exports.SlideInUp = _SlideInUp2.default;
-exports.SlideOutDown = _SlideOutDown2.default;
-exports.SlideOutLeft = _SlideOutLeft2.default;
-exports.SlideOutRight = _SlideOutRight2.default;
-exports.SlideOutUp = _SlideOutUp2.default;
+exports.FlipInX = _InX2.default;
+exports.FlipInY = _InY2.default;
+exports.FlipOutX = _OutX2.default;
+exports.FlipOutY = _OutY2.default;
+exports.LightSpeedIn = _In6.default;
+exports.LightSpeedOut = _Out6.default;
+exports.RotateIn = _In8.default;
+exports.RotateInDownLeft = _InDownLeft2.default;
+exports.RotateInDownRight = _InDownRight2.default;
+exports.RotateInUpLeft = _InUpLeft2.default;
+exports.RotateInUpRight = _InUpRight2.default;
+exports.RotateOut = _Out8.default;
+exports.RotateOutDownLeft = _OutDownLeft2.default;
+exports.RotateOutDownRight = _OutDownRight2.default;
+exports.RotateOutUpLeft = _OutUpLeft2.default;
+exports.RotateOutUpRight = _OutUpRight2.default;
+exports.SlideInDown = _InDown6.default;
+exports.SlideInLeft = _InLeft6.default;
+exports.SlideInRight = _InRight6.default;
+exports.SlideInUp = _InUp6.default;
+exports.SlideOutDown = _OutDown6.default;
+exports.SlideOutLeft = _OutLeft6.default;
+exports.SlideOutRight = _OutRight6.default;
+exports.SlideOutUp = _OutUp6.default;
 exports.Hinge = _Hinge2.default;
 exports.RollIn = _RollIn2.default;
 exports.RollOut = _RollOut2.default;
-exports.ZoomIn = _ZoomIn2.default;
-exports.ZoomInDown = _ZoomInDown2.default;
-exports.ZoomInLeft = _ZoomInLeft2.default;
-exports.ZoomInRight = _ZoomInRight2.default;
-exports.ZoomInUp = _ZoomInUp2.default;
-exports.ZoomOut = _ZoomOut2.default;
-exports.ZoomOutDown = _ZoomOutDown2.default;
-exports.ZoomOutLeft = _ZoomOutLeft2.default;
-exports.ZoomOutRight = _ZoomOutRight2.default;
-exports.ZoomOutUp = _ZoomOutUp2.default;
+exports.ZoomIn = _In10.default;
+exports.ZoomInDown = _InDown8.default;
+exports.ZoomInLeft = _InLeft8.default;
+exports.ZoomInRight = _InRight8.default;
+exports.ZoomInUp = _InUp8.default;
+exports.ZoomOut = _Out10.default;
+exports.ZoomOutDown = _OutDown8.default;
+exports.ZoomOutLeft = _OutLeft8.default;
+exports.ZoomOutRight = _OutRight8.default;
+exports.ZoomOutUp = _OutUp8.default;
