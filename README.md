@@ -1,4 +1,4 @@
-# animate-css-styled-components (beta)
+# animate-css-styled-components
 
 simple port of animate css for styled-components
 
@@ -68,8 +68,10 @@ Example:
 	 - prop for represent display css property
 	 - default `inline-block`
 
+## Examples
+
+See all examples [here](https://dielduarte.github.io/animate-css-styled-components/) 
 
 # WIP
  - tests with jest
- - storybook with examples of all animations.
  - `animate` component, wrapper for all animations with a only component.

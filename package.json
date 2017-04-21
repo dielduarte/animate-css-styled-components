@@ -1,6 +1,6 @@
 {
   "name": "animate-css-styled-components",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "port of animate.css for styled-components",
   "main": "./index.js",
   "scripts": {
