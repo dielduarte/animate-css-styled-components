@@ -27,7 +27,7 @@ import Wobble from 'animate-css-styled-components/Especials/Wobble';
 ```
 
 
-###### See how import specifics animations [here](https://github.com/dielduarte/animate-css-styled-components/docs/specif-animations).
+###### See how import specifics animations [here](https://github.com/dielduarte/animate-css-styled-components/tree/master/docs/specific-animations).
 
 Now, this animation is a component and you can encompassing the desired content within the component.
 
