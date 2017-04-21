@@ -150,6 +150,14 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
+animate-css-styled-components@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/animate-css-styled-components/-/animate-css-styled-components-0.0.7.tgz#bf786361667c19dc7cbc75ee00af4bf887fecb9c"
+  dependencies:
+    react "^15.5.4"
+    react-dom "^15.5.4"
+    styled-components "^1.4.5"
+
 ansi-html@0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/ansi-html/-/ansi-html-0.0.7.tgz#813584021962a9e9e6fd039f940d12f56ca7859e"
