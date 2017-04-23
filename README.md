@@ -66,11 +66,11 @@ Example:
 	 - default `running`
  - display
 	 - prop for represent display css property
-	 - default `inline-block`
+	 - default `block`
 
 ## Examples
 
-See all examples [here](https://dielduarte.github.io/animate-css-styled-components/) 
+See all examples [here](https://dielduarte.github.io/animate-css-styled-components/)
 
 # WIP
  - tests with jest

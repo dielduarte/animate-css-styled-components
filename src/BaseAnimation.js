@@ -8,7 +8,7 @@ const BaseAnimation = styled.div`
   animation-direction: ${props => props.direction};
   animation-fill-mode: ${props => props.fillMode};
   animation-play-state:  ${props => props.playState};
-  display: ${props => props.inline};
+  display: ${props => props.display};
 `;
 
 BaseAnimation.defaultProps = {
@@ -19,7 +19,7 @@ BaseAnimation.defaultProps = {
   direction: 'normal',
   fillMode: 'both',
   playState: 'running',
-  inline: 'initial'
+  display: 'block'
 }
 
 export default BaseAnimation;

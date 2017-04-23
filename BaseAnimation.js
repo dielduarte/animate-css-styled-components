@@ -29,7 +29,7 @@ var BaseAnimation = _styledComponents2.default.div(_templateObject, function (pr
 }, function (props) {
   return props.playState;
 }, function (props) {
-  return props.inline;
+  return props.display;
 });
 
 BaseAnimation.defaultProps = {
@@ -40,7 +40,7 @@ BaseAnimation.defaultProps = {
   direction: 'normal',
   fillMode: 'both',
   playState: 'running',
-  inline: 'initial'
+  display: 'block'
 };
 
 exports.default = BaseAnimation;
