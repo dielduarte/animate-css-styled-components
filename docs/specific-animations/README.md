@@ -6,7 +6,7 @@
 ## Attention
 
 ```
- import AnimationType from 'animate-css-styled-components/Attention/AnimationType';
+ import { AnimationType } from 'animate-css-styled-components';
 ```
 #### Animations types
  - Flash
@@ -22,14 +22,10 @@
 ## Bounce
 
 ```
- import AnimationType from 'animate-css-styled-components/Bounce/AnimationType';
+ import { AnimationType } from 'animate-css-styled-components';
 ```
 #### Animations types
  - Bounce
-	 - For Bounce animation just import the index file:
-```
- import Bounce from 'animate-css-styled-components/Bounce';
-```
  - BounceIn
  - BounceInDown
  - BounceInLeft
@@ -45,7 +41,7 @@
 ## Especials
 
 ```
- import AnimationType from 'animate-css-styled-components/Especials/AnimationType';
+ import { AnimationType } from 'animate-css-styled-components';
 ```
 #### Animations types
  - Hinge
@@ -56,107 +52,103 @@
 ## Fade
 
 ```
- import AnimationType from 'animate-css-styled-components/Fade/AnimationType';
+ import { AnimationType } from 'animate-css-styled-components';
 ```
 #### Animations types
- - In
- - InDown
- - InDownBig
- - InLeft
- - InLeftBig
- - InRight
- - InRightBig
- - InUp
- - InUpBig
- - Out
- - OutDown
- - OutDownBig
- - OutLeft
- - OutLeftBig
- - OutRight
- - OutRightBig
- - OutUp
- - OutUpBig
+ - FadeIn
+ - FadeInDown
+ - FadeInDownBig
+ - FadeInLeft
+ - FadeInLeftBig
+ - FadeInRight
+ - FadeInRightBig
+ - FadeInUp
+ - FadeInUpBig
+ - FadeOut
+ - FadeOutDown
+ - FadeOutDownBig
+ - FadeOutLeft
+ - FadeOutLeftBig
+ - FadeOutRight
+ - FadeOutRightBig
+ - FadeOutUp
+ - FadeOutUpBig
 
 ## Flip
 
 ```
- import AnimationType from 'animate-css-styled-components/Flip/AnimationType';
+ import { AnimationType } from 'animate-css-styled-components';
 ```
 #### Animations types
 
  - Flip
-	 - For Flip animation just import the index file:
-```
- import Flip from 'animate-css-styled-components/Flip';
-```
- -  InX
- - InY
- - OutX
- - OutY
+ - FlipInX
+ - FlipInY
+ - FlipOutX
+ - FlipOutY
 
 ## LightSpeed
 
 ```
- import AnimationType from 'animate-css-styled-components/LightSpeed/AnimationType';
+  import { AnimationType } from 'animate-css-styled-components';
 ```
 #### Animations types
 
- -  In
- - Out
+ - LightSpeedIn
+ - LightSpeedOut
 
 
 ## Rotate
 
 ```
- import AnimationType from 'animate-css-styled-components/Rotate/AnimationType';
+  import { AnimationType } from 'animate-css-styled-components';
 ```
 #### Animations types
 
- - In
- - InDownLeft
- - InDownRight
- - InUpLeft
- - InUpRight
- - Out
- - OutDownLeft
- - OutDownRight
- - OutUpLeft
- - OutUpRight
+ - RotateIn
+ - RotateInDownLeft
+ - RotateInDownRight
+ - RotateInUpLeft
+ - RotateInUpRight
+ - RotateOut
+ - RotateOutDownLeft
+ - RotateOutDownRight
+ - RotateOutUpLeft
+ - RotateOutUpRight
 
 
 
 ## Slide
 
 ```
- import AnimationType from 'animate-css-styled-components/Slide/AnimationType';
+  import { AnimationType } from 'animate-css-styled-components';
 ```
 #### Animations types
 
- - InDown
- - InLeft
- - InRight
- - InUp
- - OutDown
- - OutLeft
- - OutRight
- - OutUp
+ - SlideInDown
+ - SlideInLeft
+ - SlideInRight
+ - SlideInUp
+ - SlideOutDown
+ - SlideOutLeft
+ - SlideOutRight
+ - SlideOutUp
 
 
 ## Zoom
 
 ```
- import AnimationType from 'animate-css-styled-components/Zoom/AnimationType';
+  import { AnimationType } from 'animate-css-styled-components';
 ```
 #### Animations types
 
- - In
- - InDown
- - InLeft
- - InRight
- - InUp
- - Out
- - OutDown
- - OutLeft
- - OutRight
- - OutUp
+ - ZoomIn
+ - ZoomInDown
+ - ZoomInLeft
+ - ZoomInRight
+ - ZoomInUp
+ - ZoomOut
+ - ZoomOutDown
+ - ZoomOutLeft
+ - ZoomOutRight
+ - ZoomOutUp
