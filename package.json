@@ -1,12 +1,13 @@
 {
   "name": "animate-css-styled-components",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "port of animate.css for styled-components",
-  "main": "./index.js",
+  "main": "./lib/index.js",
   "scripts": {
-    "build": "babel src -d ./",
+    "build": "babel src -d ./lib",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prepublish": "babel src -d ./lib"
   },
   "repository": {
     "type": "git",
