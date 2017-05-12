@@ -1,3 +1,4 @@
+import BaseAnimation from './BaseAnimation';
 import Flash from './Attention/Flash';
 import HeadShake from './Attention/HeadShake';
 import Jello from './Attention/Jello';
@@ -164,5 +165,6 @@ export {
   ZoomOutDown,
   ZoomOutLeft,
   ZoomOutRight,
-  ZoomOutUp
+  ZoomOutUp,
+  BaseAnimation
 };
