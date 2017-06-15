@@ -7,7 +7,9 @@
     "build": "babel src -d ./lib",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "prepublish": "babel src -d ./lib"
+    "prepublish": "babel src -d ./lib",
+    "test-dev": "jest --watch",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
   "homepage": "https://github.com/dielduarte/animate-css-styled-components#readme",
   "dependencies": {
     "animate-css-styled-components": "^0.0.7",
+    "jest": "^20.0.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "styled-components": "^1.4.5"
