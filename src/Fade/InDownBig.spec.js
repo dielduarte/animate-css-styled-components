@@ -1,10 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import BaseAnimation from './BaseAnimation';
+import FadeInDownBig from './InDownBig';
 
 it('renders with default props', () => {
 	const tree = renderer.create(
-		<BaseAnimation />
+		<FadeInDownBig />
 	).toJSON();
 
 	expect(tree).toMatchSnapshot();

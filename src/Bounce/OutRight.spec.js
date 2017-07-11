@@ -1,10 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import BaseAnimation from './BaseAnimation';
+import BounceOutRight from './OutRight';
 
 it('renders with default props', () => {
 	const tree = renderer.create(
-		<BaseAnimation />
+		<BounceOutRight />
 	).toJSON();
 
 	expect(tree).toMatchSnapshot();

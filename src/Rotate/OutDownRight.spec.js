@@ -1,10 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import BaseAnimation from './BaseAnimation';
+import RotateOutDownRight from './OutDownRight';
 
 it('renders with default props', () => {
 	const tree = renderer.create(
-		<BaseAnimation />
+		<RotateOutDownRight />
 	).toJSON();
 
 	expect(tree).toMatchSnapshot();

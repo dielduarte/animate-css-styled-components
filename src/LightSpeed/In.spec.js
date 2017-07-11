@@ -1,10 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import BaseAnimation from './BaseAnimation';
+import LightSpeedIn from './In';
 
 it('renders with default props', () => {
 	const tree = renderer.create(
-		<BaseAnimation />
+		<LightSpeedIn />
 	).toJSON();
 
 	expect(tree).toMatchSnapshot();

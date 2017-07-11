@@ -8,7 +8,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "prepublish": "babel src -d ./lib",
-    "test-dev": "jest --watch",
+    "test-dev": "jest --watch --coverage",
     "test": "jest"
   },
   "repository": {
@@ -24,8 +24,10 @@
   "dependencies": {
     "animate-css-styled-components": "^0.0.7",
     "jest": "^20.0.4",
+    "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-test-renderer": "^15.6.1",
     "styled-components": "^1.4.5"
   },
   "devDependencies": {
@@ -39,5 +41,18 @@
   },
   "files": [
     "lib/"
-  ]
+  ],
+  "jest": {
+    "collectCoverageFrom" : [
+      "src/**/*.js",
+      "!src/index.js",
+      "!src/lcov-report/**",
+      "!**/node_modules/**",
+      "!**/stories/**",
+      "!**/Example/**",
+      "!**/docs/**",
+      "!**/.storybook/**",
+      "!**/lib/**"
+    ]
+  }
 }

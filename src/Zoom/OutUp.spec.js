@@ -1,10 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import BaseAnimation from './BaseAnimation';
+import ZoomOutUp from './OutUp';
 
 it('renders with default props', () => {
 	const tree = renderer.create(
-		<BaseAnimation />
+		<ZoomOutUp />
 	).toJSON();
 
 	expect(tree).toMatchSnapshot();

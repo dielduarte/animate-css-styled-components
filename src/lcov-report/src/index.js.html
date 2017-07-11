@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">src</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/234</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/153</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import BaseAn<span class="cstat-no" title="statement not covered" >imation from './BaseAnimation';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span></span>
+import Flash <span class="cstat-no" title="statement not covered" >from './Attention/Flash';<span class="cstat-no" title="statement not covered" ></span></span>
+import HeadShake <span class="cstat-no" title="statement not covered" >from './Attention/HeadShake';<span class="cstat-no" title="statement not covered" ></span></span>
+import Jello <span class="cstat-no" title="statement not covered" >from './Attention/Jello';<span class="cstat-no" title="statement not covered" ></span></span>
+import Pulse <span class="cstat-no" title="statement not covered" >from './Attention/Pulse';<span class="cstat-no" title="statement not covered" ></span></span>
+import RubberBand <span class="cstat-no" title="statement not covered" >from './Attention/RubberBand';<span class="cstat-no" title="statement not covered" ></span></span>
+import Shake <span class="cstat-no" title="statement not covered" >from './Attention/Shake';<span class="cstat-no" title="statement not covered" ></span></span>
+import Swing <span class="cstat-no" title="statement not covered" >from './Attention/Swing';<span class="cstat-no" title="statement not covered" ></span></span>
+import Tada <span class="cstat-no" title="statement not covered" >from './Attention/Tada';<span class="cstat-no" title="statement not covered" ></span></span>
+import Wobble <span class="cstat-no" title="statement not covered" >from './Attention/Wobble';<span class="cstat-no" title="statement not covered" ></span></span>
+&nbsp;
+import Bounce <span class="cstat-no" title="statement not covered" >from './Bounce';<span class="cstat-no" title="statement not covered" ></span></span>
+import Bou<span class="cstat-no" title="statement not covered" >nceIn from './Bounce/In</span>';<span class="cstat-no" title="statement not covered" ></span>
+import Bounc<span class="cstat-no" title="statement not covered" >eInUp from './Bounce/InUp</span>';<span class="cstat-no" title="statement not covered" ></span>
+import BounceI<span class="cstat-no" title="statement not covered" >nDown from './Bounce/InDown</span>';<span class="cstat-no" title="statement not covered" ></span>
+import BounceI<span class="cstat-no" title="statement not covered" >nLeft from './Bounce/InLeft</span>';<span class="cstat-no" title="statement not covered" ></span>
+import BounceIn<span class="cstat-no" title="statement not covered" >Right from './Bounce/InRight</span>';<span class="cstat-no" title="statement not covered" ></span>
+&nbsp;
+import Boun<span class="cstat-no" title="statement not covered" >ceOut from './Bounce/Out</span>';<span class="cstat-no" title="statement not covered" ></span>
+import BounceOu<span class="cstat-no" title="statement not covered" >tDown from './Bounce/OutDown</span>';<span class="cstat-no" title="statement not covered" ></span>
+import BounceOu<span class="cstat-no" title="statement not covered" >tLeft from './Bounce/OutLeft</span>';<span class="cstat-no" title="statement not covered" ></span>
+import BounceOut<span class="cstat-no" title="statement not covered" >Right from './Bounce/OutRight</span>';<span class="cstat-no" title="statement not covered" ></span>
+import Bounce<span class="cstat-no" title="statement not covered" >OutUp from './Bounce/OutUp</span>';<span class="cstat-no" title="statement not covered" ></span>
+&nbsp;
+import Fade<span class="cstat-no" title="statement not covered" >In from './Fade/In';<span class="cstat-no" title="statement not covered" ></span></span>
+import FadeInDo<span class="cstat-no" title="statement not covered" >wn from './Fade/InDown';<span class="cstat-no" title="statement not covered" ></span></span>
+import FadeInDown<span class="cstat-no" title="statement not covered" >Big from './Fade/InDownBig';<span class="cstat-no" title="statement not covered" ></span></span>
+import FadeInLe<span class="cstat-no" title="statement not covered" >ft from './Fade/InLeft';<span class="cstat-no" title="statement not covered" ></span></span>
+import FadeInLeft<span class="cstat-no" title="statement not covered" >Big from './Fade/InLeftBig';<span class="cstat-no" title="statement not covered" ></span></span>
+import FadeInRig<span class="cstat-no" title="statement not covered" >ht from './Fade/InRight';<span class="cstat-no" title="statement not covered" ></span></span>
+import FadeInRight<span class="cstat-no" title="statement not covered" >Big from './Fade/InRightBig';<span class="cstat-no" title="statement not covered" ></span></span>
+import FadeIn<span class="cstat-no" title="statement not covered" >Up from './Fade/InUp';<span class="cstat-no" title="statement not covered" ></span></span>
+import FadeInUp<span class="cstat-no" title="statement not covered" >Big from './Fade/InUpBig';<span class="cstat-no" title="statement not covered" ></span></span>
+&nbsp;
+import FadeO<span class="cstat-no" title="statement not covered" >ut from './Fade/Out';<span class="cstat-no" title="statement not covered" ></span></span>
+import FadeOutDo<span class="cstat-no" title="statement not covered" >wn from './Fade/OutDown';<span class="cstat-no" title="statement not covered" ></span></span>
+import FadeOutDown<span class="cstat-no" title="statement not covered" >Big from './Fade/OutDownBig';<span class="cstat-no" title="statement not covered" ></span></span>
+import FadeOutLe<span class="cstat-no" title="statement not covered" >ft from './Fade/OutLeft';<span class="cstat-no" title="statement not covered" ></span></span>
+import FadeOutLeft<span class="cstat-no" title="statement not covered" >Big from './Fade/OutLeftBig';<span class="cstat-no" title="statement not covered" ></span></span>
+import FadeOutRig<span class="cstat-no" title="statement not covered" >ht from './Fade/OutRight';<span class="cstat-no" title="statement not covered" ></span></span>
+import FadeOutRight<span class="cstat-no" title="statement not covered" >Big from './Fade/OutRightBig';<span class="cstat-no" title="statement not covered" ></span></span>
+import FadeOut<span class="cstat-no" title="statement not covered" >Up from './Fade/OutUp';<span class="cstat-no" title="statement not covered" ></span></span>
+import FadeOutUp<span class="cstat-no" title="statement not covered" >Big from './Fade/OutUpBig';<span class="cstat-no" title="statement not covered" ></span></span>
+&nbsp;
+import Flip <span class="cstat-no" title="statement not covered" >from './Flip';<span class="cstat-no" title="statement not covered" ></span></span>
+import Flip<span class="cstat-no" title="statement not covered" >InX from './Flip/InX';<span class="cstat-no" title="statement not covered" ></span></span>
+import Flip<span class="cstat-no" title="statement not covered" >InY from './Flip/InY';<span class="cstat-no" title="statement not covered" ></span></span>
+import FlipO<span class="cstat-no" title="statement not covered" >utX from './Flip/OutX';<span class="cstat-no" title="statement not covered" ></span></span>
+import FlipO<span class="cstat-no" title="statement not covered" >utY from './Flip/OutY';<span class="cstat-no" title="statement not covered" ></span></span>
+&nbsp;
+import Ligh<span class="cstat-no" title="statement not covered" >tSpeedIn from './LightSpeed</span>/In';<span class="cstat-no" title="statement not covered" ></span>
+import Light<span class="cstat-no" title="statement not covered" >SpeedOut from './LightSpeed/</span>Out';<span class="cstat-no" title="statement not covered" ></span>
+&nbsp;
+import Rota<span class="cstat-no" title="statement not covered" >teIn from './Rotate/In'</span>;<span class="cstat-no" title="statement not covered" ></span>
+import RotateInDow<span class="cstat-no" title="statement not covered" >nLeft from './Rotate/InDownLeft</span>';<span class="cstat-no" title="statement not covered" ></span>
+import RotateInDown<span class="cstat-no" title="statement not covered" >Right from './Rotate/InDownRight</span>';<span class="cstat-no" title="statement not covered" ></span>
+import RotateInU<span class="cstat-no" title="statement not covered" >pLeft from './Rotate/InUpLeft</span>';<span class="cstat-no" title="statement not covered" ></span>
+import RotateInUp<span class="cstat-no" title="statement not covered" >Right from './Rotate/InUpRight</span>';<span class="cstat-no" title="statement not covered" ></span>
+&nbsp;
+import Rotat<span class="cstat-no" title="statement not covered" >eOut from './Rotate/Out'</span>;<span class="cstat-no" title="statement not covered" ></span>
+import RotateOutDow<span class="cstat-no" title="statement not covered" >nLeft from './Rotate/OutDownLeft</span>';<span class="cstat-no" title="statement not covered" ></span>
+import RotateOutDown<span class="cstat-no" title="statement not covered" >Right from './Rotate/OutDownRight</span>';<span class="cstat-no" title="statement not covered" ></span>
+import RotateOutU<span class="cstat-no" title="statement not covered" >pLeft from './Rotate/OutUpLeft</span>';<span class="cstat-no" title="statement not covered" ></span>
+import RotateOutUp<span class="cstat-no" title="statement not covered" >Right from './Rotate/OutUpRight</span>';<span class="cstat-no" title="statement not covered" ></span>
+&nbsp;
+import SlideInD<span class="cstat-no" title="statement not covered" >own from './Slide/InDown';<span class="cstat-no" title="statement not covered" ></span></span>
+import SlideInL<span class="cstat-no" title="statement not covered" >eft from './Slide/InLeft';<span class="cstat-no" title="statement not covered" ></span></span>
+import SlideInRi<span class="cstat-no" title="statement not covered" >ght from './Slide/InRight';<span class="cstat-no" title="statement not covered" ></span></span>
+import SlideI<span class="cstat-no" title="statement not covered" >nUp from './Slide/InUp';<span class="cstat-no" title="statement not covered" ></span></span>
+&nbsp;
+import SlideOutD<span class="cstat-no" title="statement not covered" >own from './Slide/OutDown';<span class="cstat-no" title="statement not covered" ></span></span>
+import SlideOutL<span class="cstat-no" title="statement not covered" >eft from './Slide/OutLeft';<span class="cstat-no" title="statement not covered" ></span></span>
+import SlideOutRi<span class="cstat-no" title="statement not covered" >ght from './Slide/OutRight';<span class="cstat-no" title="statement not covered" ></span></span>
+import SlideOu<span class="cstat-no" title="statement not covered" >tUp from './Slide/OutUp';<span class="cstat-no" title="statement not covered" ></span></span>
+&nbsp;
+import Hinge <span class="cstat-no" title="statement not covered" >from './Especials/Hinge';<span class="cstat-no" title="statement not covered" ></span></span>
+import RollIn <span class="cstat-no" title="statement not covered" >from './Especials/RollIn';<span class="cstat-no" title="statement not covered" ></span></span>
+import RollOut <span class="cstat-no" title="statement not covered" >from './Especials/RollOut';<span class="cstat-no" title="statement not covered" ></span></span>
+&nbsp;
+import Zoom<span class="cstat-no" title="statement not covered" >In from './Zoom/In';<span class="cstat-no" title="statement not covered" ></span></span>
+import ZoomInDo<span class="cstat-no" title="statement not covered" >wn from './Zoom/InDown';<span class="cstat-no" title="statement not covered" ></span></span>
+import ZoomInLe<span class="cstat-no" title="statement not covered" >ft from './Zoom/InLeft';<span class="cstat-no" title="statement not covered" ></span></span>
+import ZoomInRig<span class="cstat-no" title="statement not covered" >ht from './Zoom/InRight';<span class="cstat-no" title="statement not covered" ></span></span>
+import ZoomIn<span class="cstat-no" title="statement not covered" >Up from './Zoom/InUp';<span class="cstat-no" title="statement not covered" ></span></span>
+&nbsp;
+import ZoomO<span class="cstat-no" title="statement not covered" >ut from './Zoom/Out';<span class="cstat-no" title="statement not covered" ></span></span>
+import ZoomOutDo<span class="cstat-no" title="statement not covered" >wn from './Zoom/OutDown';<span class="cstat-no" title="statement not covered" ></span></span>
+import ZoomOutLe<span class="cstat-no" title="statement not covered" >ft from './Zoom/OutLeft';<span class="cstat-no" title="statement not covered" ></span></span>
+import ZoomOutRig<span class="cstat-no" title="statement not covered" >ht from './Zoom/OutRight';<span class="cstat-no" title="statement not covered" ></span></span>
+import ZoomOut<span class="cstat-no" title="statement not covered" >Up from './Zoom/OutUp';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span>
+&nbsp;
+export {
+  Bounce,<span class="cstat-no" title="statement not covered" ></span>
+  Flash,<span class="cstat-no" title="statement not covered" ></span>
+  HeadShake,<span class="cstat-no" title="statement not covered" ></span>
+  Jello,<span class="cstat-no" title="statement not covered" ></span>
+  Pulse,<span class="cstat-no" title="statement not covered" ></span>
+  RubberBand,<span class="cstat-no" title="statement not covered" ></span>
+  Shake,<span class="cstat-no" title="statement not covered" ></span>
+  Swing,<span class="cstat-no" title="statement not covered" ></span>
+  Tada,<span class="cstat-no" title="statement not covered" ></span>
+  Wobble,<span class="cstat-no" title="statement not covered" ></span>
+  BounceIn,<span class="cstat-no" title="statement not covered" ></span>
+  BounceInUp,<span class="cstat-no" title="statement not covered" ></span>
+  BounceInDown,<span class="cstat-no" title="statement not covered" ></span>
+  BounceInLeft,<span class="cstat-no" title="statement not covered" ></span>
+  BounceInRight,<span class="cstat-no" title="statement not covered" ></span>
+  BounceOut,<span class="cstat-no" title="statement not covered" ></span>
+  BounceOutDown,<span class="cstat-no" title="statement not covered" ></span>
+  BounceOutLeft,<span class="cstat-no" title="statement not covered" ></span>
+  BounceOutRight,<span class="cstat-no" title="statement not covered" ></span>
+  BounceOutUp,<span class="cstat-no" title="statement not covered" ></span>
+  FadeIn,<span class="cstat-no" title="statement not covered" ></span>
+  FadeInDown,<span class="cstat-no" title="statement not covered" ></span>
+  FadeInDownBig,<span class="cstat-no" title="statement not covered" ></span>
+  FadeInLeft,<span class="cstat-no" title="statement not covered" ></span>
+  FadeInLeftBig,<span class="cstat-no" title="statement not covered" ></span>
+  FadeInRight,<span class="cstat-no" title="statement not covered" ></span>
+  FadeInRightBig,<span class="cstat-no" title="statement not covered" ></span>
+  FadeInUp,<span class="cstat-no" title="statement not covered" ></span>
+  FadeInUpBig,<span class="cstat-no" title="statement not covered" ></span>
+  FadeOut,<span class="cstat-no" title="statement not covered" ></span>
+  FadeOutDown,<span class="cstat-no" title="statement not covered" ></span>
+  FadeOutDownBig,<span class="cstat-no" title="statement not covered" ></span>
+  FadeOutLeft,<span class="cstat-no" title="statement not covered" ></span>
+  FadeOutLeftBig,<span class="cstat-no" title="statement not covered" ></span>
+  FadeOutRight,<span class="cstat-no" title="statement not covered" ></span>
+  FadeOutRightBig,<span class="cstat-no" title="statement not covered" ></span>
+  FadeOutUp,<span class="cstat-no" title="statement not covered" ></span>
+  FadeOutUpBig,<span class="cstat-no" title="statement not covered" ></span>
+  Flip,<span class="cstat-no" title="statement not covered" ></span>
+  FlipInX,<span class="cstat-no" title="statement not covered" ></span>
+  FlipInY,<span class="cstat-no" title="statement not covered" ></span>
+  FlipOutX,<span class="cstat-no" title="statement not covered" ></span>
+  FlipOutY,<span class="cstat-no" title="statement not covered" ></span>
+  LightSpeedIn,<span class="cstat-no" title="statement not covered" ></span>
+  LightSpeedOut,<span class="cstat-no" title="statement not covered" ></span>
+  RotateIn,<span class="cstat-no" title="statement not covered" ></span>
+  RotateInDownLeft,<span class="cstat-no" title="statement not covered" ></span>
+  RotateInDownRight,<span class="cstat-no" title="statement not covered" ></span>
+  RotateInUpLeft,<span class="cstat-no" title="statement not covered" ></span>
+  RotateInUpRight,<span class="cstat-no" title="statement not covered" ></span>
+  RotateOut,<span class="cstat-no" title="statement not covered" ></span>
+  RotateOutDownLeft,<span class="cstat-no" title="statement not covered" ></span>
+  RotateOutDownRight,<span class="cstat-no" title="statement not covered" ></span>
+  RotateOutUpLeft,<span class="cstat-no" title="statement not covered" ></span>
+  RotateOutUpRight,<span class="cstat-no" title="statement not covered" ></span>
+  SlideInDown,<span class="cstat-no" title="statement not covered" ></span>
+  SlideInLeft,<span class="cstat-no" title="statement not covered" ></span>
+  SlideInRight,<span class="cstat-no" title="statement not covered" ></span>
+  SlideInUp,<span class="cstat-no" title="statement not covered" ></span>
+  SlideOutDown,<span class="cstat-no" title="statement not covered" ></span>
+  SlideOutLeft,<span class="cstat-no" title="statement not covered" ></span>
+  SlideOutRight,<span class="cstat-no" title="statement not covered" ></span>
+  SlideOutUp,<span class="cstat-no" title="statement not covered" ></span>
+  Hinge,<span class="cstat-no" title="statement not covered" ></span>
+  RollIn,<span class="cstat-no" title="statement not covered" ></span>
+  RollOut,<span class="cstat-no" title="statement not covered" ></span>
+  ZoomIn,<span class="cstat-no" title="statement not covered" ></span>
+  ZoomInDown,<span class="cstat-no" title="statement not covered" ></span>
+  ZoomInLeft,<span class="cstat-no" title="statement not covered" ></span>
+  ZoomInRight,<span class="cstat-no" title="statement not covered" ></span>
+  ZoomInUp,<span class="cstat-no" title="statement not covered" ></span>
+  ZoomOut,<span class="cstat-no" title="statement not covered" ></span>
+  ZoomOutDown,<span class="cstat-no" title="statement not covered" ></span>
+  ZoomOutLeft,<span class="cstat-no" title="statement not covered" ></span>
+  ZoomOutRight,<span class="cstat-no" title="statement not covered" ></span>
+  ZoomOutUp,<span class="cstat-no" title="statement not covered" ></span>
+  BaseAnimation
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Jul 09 2017 23:18:01 GMT-0300 (-03)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

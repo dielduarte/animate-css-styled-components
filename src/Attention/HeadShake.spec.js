@@ -1,10 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import BaseAnimation from './BaseAnimation';
+import HeadShake from './HeadShake';
 
 it('renders with default props', () => {
 	const tree = renderer.create(
-		<BaseAnimation />
+		<HeadShake />
 	).toJSON();
 
 	expect(tree).toMatchSnapshot();
