@@ -9,7 +9,7 @@
     "build-storybook": "build-storybook",
     "prepublish": "babel src -d ./lib",
     "test-dev": "jest --watch --coverage",
-    "test": "jest"
+    "test": "jest -u"
   },
   "repository": {
     "type": "git",
