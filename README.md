@@ -2,6 +2,8 @@
 
 simple port of animate css for styled-components
 
+[![Build Status](https://travis-ci.org/dielduarte/animate-css-styled-components.svg?branch=master)](https://travis-ci.org/dielduarte/animate-css-styled-components)
+
 ----------
 
 ## instalation
@@ -73,32 +75,31 @@ Example:
 
 ```
   import { BaseAnimation } from 'animate-css-styled-components';
-  
+
   //create your custom animation
   const SlideOutDownAnimation = keyframes`
     from {
       transform: translate3d(0, 0, 0);
     }
-  
+
     to {
       visibility: hidden;
       transform: translate3d(0, 100%, 0);
     }
   `;
-  
-  //extend BaseAnimation component and create 
+
+  //extend BaseAnimation component and create
   //your custom styled animation
   const SlideOutDown = styled(BaseAnimation)`
     animation-name: ${SlideOutDownAnimation};
   `;
-   
+
   //export your custom styled animation  
   export default SlideOutDown;
 ```
 
-now your animation is a styled-component and you can use this like any other styled-component, 
+now your animation is a styled-component and you can use this like any other styled-component,
 passing the all BaseAnimation [props](https://github.com/dielduarte/animate-css-styled-components#props).
 
 # WIP
- - tests with jest
  - `animate` component, wrapper for all animations with a only component.
