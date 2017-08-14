@@ -28,7 +28,7 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-test-renderer": "^15.6.1",
-    "styled-components": "^1.4.5"
+    "styled-components": "^2.1.2"
   },
   "devDependencies": {
     "@kadira/storybook": "^2.21.0",
@@ -43,7 +43,7 @@
     "lib/"
   ],
   "jest": {
-    "collectCoverageFrom" : [
+    "collectCoverageFrom": [
       "src/**/*.js",
       "!src/index.js",
       "!src/lcov-report/**",
