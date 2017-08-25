@@ -2,7 +2,7 @@
 
 exports[`renders with default props 1`] = `
 <div
-  className="bUpDRz"
+  className="sc-bwzfXH dKEkhe sc-bdVaJa dVavXz"
   direction="normal"
   display="block"
 />
