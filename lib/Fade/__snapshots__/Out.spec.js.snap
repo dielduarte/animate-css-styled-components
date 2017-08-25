@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`renders with default props 1`] = `
-<div
-  className="sc-bwzfXH vuGJu sc-bdVaJa dVavXz"
-  direction="normal"
-  display="block"
-/>
-`;
