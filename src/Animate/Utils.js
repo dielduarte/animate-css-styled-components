@@ -1,0 +1,1 @@
+export const isArray = (obj) => new Array(obj).isArray;
