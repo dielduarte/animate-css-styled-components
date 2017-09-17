@@ -11,7 +11,7 @@ import Animate, {
 storiesOf('Animate', module)
     .add('Flash', () => (
         <FullView center>
-            <Animate Animation={[Flash, Bounce]} duration={["2s", "0.8s"]} delay={["0.2s", "10s"]}>
+            <Animate Animation={[Flash, Bounce]} duration={["1s", "0.8s"]} delay={["0.2s", "5s"]}>
                 <Card rounded width="100px" height="100px">
                     card content...
                 </Card>

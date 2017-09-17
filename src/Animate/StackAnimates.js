@@ -29,9 +29,9 @@ class StackAnimates extends PureComponent {
     const { Animation } = this.state;
 
     return (
-    <Animation {...this.state}>
+      <Animation {...this.state}>
         {this.props.children}
-    </Animation>
+      </Animation>
     );
   }
 

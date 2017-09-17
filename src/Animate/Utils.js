@@ -7,7 +7,7 @@ export const buildState = (props, index = 0) => {
     const value = prop[1];
 
     if(key !== 'children') {
-        state[key] = isArray(value) ? value[index] : value;
+      state[key] = isArray(value) ? value[index] : value;
     }
   });
 
