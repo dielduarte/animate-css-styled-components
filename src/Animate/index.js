@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
+
 import * as Utils from './Utils';
+import StackAnimates from './StackAnimates';
 
 class Animate extends PureComponent {
   render() {
     const { Animation } = this.props;
 
     if (Utils.isArray(Animation)) {
-        return 'multiple animations';
+      return <StackAnimates {...this.props} />;
     } 
     
     return (
