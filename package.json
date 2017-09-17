@@ -5,6 +5,7 @@
   "main": "./lib/index.js",
   "scripts": {
     "build": "babel src -d ./lib",
+    "build-watch": "babel src -d ./lib -w",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "prepublish": "babel src -d ./lib",
