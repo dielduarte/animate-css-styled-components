@@ -63,7 +63,51 @@ Example:
 	 - prop for represent display css property
 	 - default `block`
 
-## Examples
+## Animate - HOC
+
+For convenience you can use Animate HOC to use animations stacked, you could pass a unique component to `Animation` prop or an array of animations, example:
+
+```
+  import Animate, {
+    Flash,
+    Bounce
+  } from 'animate-css-styled-components';
+
+  <Animate 
+    Animation={[Flash, Bounce]} 
+    duration="0.8s" 
+    delay="0.2s">
+    <Card>
+      card content...
+    </Card>
+  </Animate>
+```
+In this example that you could see [here](https://dielduarte.github.io/animate-css-styled-components/), the Bounce Animation will run after when Flash animation is finished, respecting the duration time + delay time, duration and delay are same for all animations, but you could pass diferents values to each animation prop, look:
+
+```
+  import Animate, {
+    Flash,
+    Bounce,
+    FadeOut,
+    FadeIn
+  } from 'animate-css-styled-components';
+
+  <Animate 
+    Animation={[Flash, Bounce, FadeOut, FadeIn]}
+    duration={["0.8s", "3s", "2s", "0.4s"]}
+    delay={["0.2s", "0.1s", "0.5s", "1s"]}>
+    <Card>
+      card content...
+    </Card>
+  </Animate>
+
+```
+
+See this example [here](https://dielduarte.github.io/animate-css-styled-components/)
+
+Don't forget, you coul pass any [animations props](https://github.com/dielduarte/animate-css-styled-components#props) as single string if the value are same for all animations stacked or as an array of values.
+
+## Examples - Storybook
 
 See all examples [here](https://dielduarte.github.io/animate-css-styled-components/)
 
@@ -100,6 +144,3 @@ Example:
 
 now your animation is a styled-component and you can use this like any other styled-component,
 passing the all BaseAnimation [props](https://github.com/dielduarte/animate-css-styled-components#props).
-
-# WIP
- - `animate` component, wrapper for all animations with a only component.
