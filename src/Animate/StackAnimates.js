@@ -12,17 +12,24 @@ class StackAnimates extends PureComponent {
   }
 
   get getNextStartTime() {
-    const time = Utils.convertToMs(parseInt(Utils.removeUnit(this.state.duration)));
-    const delay = Utils.convertToMs(parseInt(Utils.removeUnit(this.state.delay)));
+    const time = Utils.convertToMs(parseFloat(Utils.removeUnit(this.state.duration)));
+    const delay = Utils.convertToMs(parseFloat(Utils.removeUnit(this.state.delay)));
     return time + delay;
-  }   
+  }
+  
+  get HaveMoreAnimations() {
+    return this.getNextIndex < this.props.Animation.length;
+  }
 
   renderNextAnimate() {
-    setTimeout(() => {
-      this.setState(
-        Utils.buildState(this.props, this.getNextIndex)
-      );
-    }, this.getNextStartTime);
+    if (this.HaveMoreAnimations) {
+      setTimeout(() => {
+        this.setState(
+          Utils.buildState(this.props, this.getNextIndex),
+          () => this.renderNextAnimate()
+        );
+      }, this.getNextStartTime);
+    }
   }
 
   render() {

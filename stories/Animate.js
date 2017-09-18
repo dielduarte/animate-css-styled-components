@@ -4,14 +4,25 @@ import FullView from '../Example/FullView';
 import Card from '../Example/Card';
 import Animate, {
     Flash,
-    Bounce
+    Bounce,
+    FadeOut,
+    FadeIn
 } from 'animate-css-styled-components';
 
 
-storiesOf('Animate', module)
-    .add('Flash', () => (
+storiesOf('Animate (HOC)', module)
+    .add('Multiple Animations', () => (
         <FullView center>
-            <Animate Animation={[Flash, Bounce]} duration={["1s", "0.8s"]} delay={["0.2s", "5s"]}>
+            <Animate Animation={[Flash, Bounce, FadeOut, FadeIn]} duration="0.8s" delay="0.2s">
+                <Card rounded width="100px" height="100px">
+                    card content...
+                </Card>
+            </Animate>
+        </FullView>
+    ))
+    .add('Multiple Animations with diferent times and delays', () => (
+        <FullView center>
+            <Animate Animation={[Flash, Bounce, FadeOut, FadeIn]} duration={["0.8s", "3s", "2s", "0.4s"]} delay={["0.2s", "0.1s", "0.5s", "1s"]}>
                 <Card rounded width="100px" height="100px">
                     card content...
                 </Card>
