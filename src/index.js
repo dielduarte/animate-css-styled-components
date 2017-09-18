@@ -89,6 +89,8 @@ import ZoomOutLeft from './Zoom/OutLeft';
 import ZoomOutRight from './Zoom/OutRight';
 import ZoomOutUp from './Zoom/OutUp';
 
+import Animate from './Animate';
+
 export {
   Bounce,
   Flash,
@@ -168,3 +170,5 @@ export {
   ZoomOutUp,
   BaseAnimation
 };
+
+export default Animate;

@@ -1,6 +1,7 @@
 import { configure } from '@kadira/storybook';
 
 function loadStories() {
+  require('../stories/Animate');
   require('../stories/Attention');
   require('../stories/Bounce');
   require('../stories/Especials');
