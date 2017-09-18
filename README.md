@@ -82,7 +82,7 @@ For convenience you can use Animate HOC to use animations stacked, you could pas
     </Card>
   </Animate>
 ```
-In this example that you could see [here](https://dielduarte.github.io/animate-css-styled-components/), the Bounce Animation will run after when Flash animation is finished, respecting the duration time + delay time, duration and delay are same for all animations, but you could pass diferents values to each animation prop, look:
+In this example that you could see [here](https://dielduarte.github.io/animate-css-styled-components/?selectedKind=Animate%20%28HOC%29&selectedStory=Multiple%20Animations&full=0&down=1&left=1&panelRight=0&downPanel=kadirahq%2Fstorybook-addon-actions%2Factions-panel), the Bounce Animation will run after when Flash animation is finished, respecting the duration time + delay time, duration and delay are same for all animations, but you could pass diferents values to each animation prop, look:
 
 ```
   import Animate, {
@@ -103,9 +103,9 @@ In this example that you could see [here](https://dielduarte.github.io/animate-c
 
 ```
 
-See this example [here](https://dielduarte.github.io/animate-css-styled-components/)
+See this example [here](https://dielduarte.github.io/animate-css-styled-components/?selectedKind=Animate%20%28HOC%29&selectedStory=Multiple%20Animations%20with%20diferent%20times%20and%20delays&full=0&down=1&left=1&panelRight=0&downPanel=kadirahq%2Fstorybook-addon-actions%2Factions-panel)
 
-Don't forget, you coul pass any [animations props](https://github.com/dielduarte/animate-css-styled-components#props) as single string if the value are same for all animations stacked or as an array of values.
+Don't forget, you coul pass any [animations props](https://github.com/dielduarte/animate-css-styled-components#props) as single string if the value are same for all animations stacked or an array of values.
 
 ## Examples - Storybook
 
