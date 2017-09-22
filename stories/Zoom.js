@@ -13,7 +13,7 @@ import {
   ZoomOutLeft,
   ZoomOutRight,
   ZoomOutUp
-} from 'animate-css-styled-components';
+} from '../src';
 
 
 storiesOf('Zoom', module)

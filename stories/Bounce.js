@@ -14,7 +14,7 @@ import {
   BounceOutLeft,
   BounceOutRight,
   BounceOutUp
-} from 'animate-css-styled-components';
+} from '../src';
 
 
 storiesOf('Bounce', module)

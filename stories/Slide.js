@@ -11,7 +11,7 @@ import {
   SlideOutLeft,
   SlideOutRight,
   SlideOutUp
-} from 'animate-css-styled-components';
+} from '../src';
 
 
 storiesOf('Slide', module)

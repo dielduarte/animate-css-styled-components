@@ -21,7 +21,7 @@ import {
   FadeOutRightBig,
   FadeOutUp,
   FadeOutUpBig
-} from 'animate-css-styled-components';
+} from '../src';
 
 
 storiesOf('Fade', module)

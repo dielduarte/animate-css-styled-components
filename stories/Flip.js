@@ -8,7 +8,7 @@ import {
   FlipInY,
   FlipOutX,
   FlipOutY
-} from 'animate-css-styled-components';
+} from '../src';
 
 
 storiesOf('Flip', module)
