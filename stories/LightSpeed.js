@@ -5,7 +5,7 @@ import Card from '../Example/Card';
 import {
   LightSpeedIn,
   LightSpeedOut
-} from 'animate-css-styled-components';
+} from '../src';
 
 
 storiesOf('LightSpeed', module)

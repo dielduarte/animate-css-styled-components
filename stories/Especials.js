@@ -6,7 +6,7 @@ import {
   Hinge,
   RollIn,
   RollOut
-} from 'animate-css-styled-components';
+} from '../src';
 
 
 storiesOf('Especials', module)

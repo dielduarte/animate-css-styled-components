@@ -13,7 +13,7 @@ import {
   RotateOutDownRight,
   RotateOutUpLeft,
   RotateOutUpRight
-} from 'animate-css-styled-components';
+} from '../src';
 
 
 storiesOf('Rotate', module)

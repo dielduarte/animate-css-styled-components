@@ -12,7 +12,7 @@ import {
   Swing,
   Tada,
   Wobble
-} from 'animate-css-styled-components';
+} from '../src';
 
 
 storiesOf('Attention', module)

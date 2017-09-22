@@ -7,7 +7,7 @@ import Animate, {
     Bounce,
     FadeOut,
     FadeIn
-} from 'animate-css-styled-components';
+} from '../src';
 
 
 storiesOf('Animate (HOC)', module)
