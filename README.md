@@ -18,7 +18,7 @@ install animate-css-styled-components
 
 import animate-css-styled-components module calling global animations
 
-```
+```jsx
 import { Wobble, FadeIn, FadeOut } from 'animate-css-styled-components';
 ```
 
@@ -28,7 +28,7 @@ Now, this animation is a component and you can encompassing the desired content 
 
 Example:
 
-```
+```jsx
   <Wobble duration="0.8s" delay="1s">
     <Card>
       card content...
@@ -67,7 +67,7 @@ Example:
 
 For convenience you can use Animate HOC to use animations stacked, you could pass a unique component to `Animation` prop or an array of animations, example:
 
-```
+```jsx
   import Animate, {
     Flash,
     Bounce
@@ -84,7 +84,7 @@ For convenience you can use Animate HOC to use animations stacked, you could pas
 ```
 In this example that you could see [here](https://dielduarte.github.io/animate-css-styled-components/?selectedKind=Animate%20%28HOC%29&selectedStory=Multiple%20Animations&full=0&down=1&left=1&panelRight=0&downPanel=kadirahq%2Fstorybook-addon-actions%2Factions-panel), the Bounce Animation will run after when Flash animation is finished, respecting the duration time + delay time, duration and delay are same for all animations, but you could pass diferents values to each animation prop, look:
 
-```
+```jsx
   import Animate, {
     Flash,
     Bounce,
@@ -117,7 +117,7 @@ You can import BaseAnimation component and create your custom animation
 
 Example:
 
-```
+```jsx
   import { BaseAnimation } from 'animate-css-styled-components';
 
   //create your custom animation
