@@ -1,109 +1,119 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import FullView from '../Example/FullView';
 import Card from '../Example/Card';
 import {
-  RotateIn,
-  RotateInDownLeft,
-  RotateInDownRight,
-  RotateInUpLeft,
-  RotateInUpRight,
-  RotateOut,
-  RotateOutDownLeft,
-  RotateOutDownRight,
-  RotateOutUpLeft,
-  RotateOutUpRight
+  Bounce,
+  BounceIn,
+  BounceInDown,
+  BounceInLeft,
+  BounceInRight,
+  BounceInUp,
+  BounceOut,
+  BounceOutDown,
+  BounceOutLeft,
+  BounceOutRight,
+  BounceOutUp
 } from '../src';
 
 
-storiesOf('Rotate', module)
-  .add('RotateIn', () => (
+storiesOf('Bounce', module)
+.add('Bounce', () => (
+  <FullView center>
+    <Bounce duration="0.8s" delay="0.2s">
+      <Card rounded width="100px" height="100px">
+        card content...
+      </Card>
+    </Bounce>
+  </FullView>
+))
+  .add('BounceIn', () => (
     <FullView center>
-      <RotateIn duration="0.8s" delay="0.2s">
+      <BounceIn duration="0.8s" delay="0.2s">
         <Card rounded width="100px" height="100px">
           card content...
         </Card>
-      </RotateIn>
+      </BounceIn>
     </FullView>
   ))
-  .add('RotateInDownLeft', () => (
+  .add('BounceInDown', () => (
     <FullView center>
-      <RotateInDownLeft duration="0.8s" delay="0.2s">
+      <BounceInDown duration="0.8s" delay="0.2s">
         <Card rounded width="100px" height="100px">
           card content...
         </Card>
-      </RotateInDownLeft>
+      </BounceInDown>
     </FullView>
   ))
-  .add('RotateInDownRight', () => (
+  .add('BounceInLeft', () => (
     <FullView center>
-      <RotateInDownRight duration="0.8s" delay="0.2s">
+      <BounceInLeft duration="0.8s" delay="0.2s">
         <Card rounded width="100px" height="100px">
           card content...
         </Card>
-      </RotateInDownRight>
+      </BounceInLeft>
     </FullView>
   ))
-  .add('RotateInUpLeft', () => (
+  .add('BounceInRight', () => (
     <FullView center>
-      <RotateInUpLeft duration="0.8s" delay="0.2s">
+      <BounceInRight duration="0.8s" delay="0.2s">
         <Card rounded width="100px" height="100px">
           card content...
         </Card>
-      </RotateInUpLeft>
+      </BounceInRight>
     </FullView>
   ))
-  .add('RotateInUpRight', () => (
+  .add('BounceInUp', () => (
     <FullView center>
-      <RotateInUpRight duration="0.8s" delay="0.2s">
+      <BounceInUp duration="0.8s" delay="0.2s">
         <Card rounded width="100px" height="100px">
           card content...
         </Card>
-      </RotateInUpRight>
+      </BounceInUp>
     </FullView>
   ))
-  .add('RotateOut', () => (
+  .add('BounceOut', () => (
     <FullView center>
-      <RotateOut duration="0.8s" delay="0.2s">
+      <BounceOut duration="0.8s" delay="0.2s">
         <Card rounded width="100px" height="100px">
           card content...
         </Card>
-      </RotateOut>
+      </BounceOut>
     </FullView>
   ))
-  .add('RotateOutDownLeft', () => (
+  .add('BounceOutDown', () => (
     <FullView center>
-      <RotateOutDownLeft duration="0.8s" delay="0.2s">
+      <BounceOutDown duration="0.8s" delay="0.2s">
         <Card rounded width="100px" height="100px">
           card content...
         </Card>
-      </RotateOutDownLeft>
+      </BounceOutDown>
     </FullView>
   ))
-  .add('RotateOutDownRight', () => (
+  .add('BounceOutLeft', () => (
     <FullView center>
-      <RotateOutDownRight duration="0.8s" delay="0.2s">
+      <BounceOutLeft duration="0.8s" delay="0.2s">
         <Card rounded width="100px" height="100px">
           card content...
         </Card>
-      </RotateOutDownRight>
+      </BounceOutLeft>
     </FullView>
   ))
-  .add('RotateOutUpLeft', () => (
+  .add('BounceOutRight', () => (
     <FullView center>
-      <RotateOutUpLeft duration="0.8s" delay="0.2s">
+      <BounceOutRight duration="0.8s" delay="0.2s">
         <Card rounded width="100px" height="100px">
           card content...
         </Card>
-      </RotateOutUpLeft>
+      </BounceOutRight>
     </FullView>
   ))
-  .add('RotateOutUpRight', () => (
+  .add('BounceOutUp', () => (
     <FullView center>
-      <RotateOutUpRight duration="0.8s" delay="0.2s">
+      <BounceOutUp duration="0.8s" delay="0.2s">
         <Card rounded width="100px" height="100px">
           card content...
         </Card>
-      </RotateOutUpRight>
+      </BounceOutUp>
     </FullView>
   ));

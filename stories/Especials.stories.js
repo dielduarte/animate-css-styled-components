@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import FullView from '../Example/FullView';
 import Card from '../Example/Card';
 import {

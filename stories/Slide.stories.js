@@ -1,99 +1,89 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import FullView from '../Example/FullView';
 import Card from '../Example/Card';
 import {
-  Flash,
-  HeadShake,
-  Jello,
-  Pulse,
-  RubberBand,
-  Shake,
-  Swing,
-  Tada,
-  Wobble
+  SlideInDown,
+  SlideInLeft,
+  SlideInRight,
+  SlideInUp,
+  SlideOutDown,
+  SlideOutLeft,
+  SlideOutRight,
+  SlideOutUp
 } from '../src';
 
 
-storiesOf('Attention', module)
-  .add('Flash', () => (
+storiesOf('Slide', module)
+  .add('SlideInDown', () => (
     <FullView center>
-      <Flash duration="0.8s" delay="0.2s">
+      <SlideInDown duration="0.8s" delay="0.2s">
         <Card rounded width="100px" height="100px">
           card content...
         </Card>
-      </Flash>
+      </SlideInDown>
     </FullView>
   ))
-  .add('HeadShake', () => (
+  .add('SlideInLeft', () => (
     <FullView center>
-      <HeadShake duration="0.8s" delay="0.2s">
+      <SlideInLeft duration="0.8s" delay="0.2s">
         <Card rounded width="100px" height="100px">
           card content...
         </Card>
-      </HeadShake>
+      </SlideInLeft>
     </FullView>
   ))
-  .add('Jello', () => (
+  .add('SlideInRight', () => (
     <FullView center>
-      <Jello duration="0.8s" delay="0.2s">
+      <SlideInRight duration="0.8s" delay="0.2s">
         <Card rounded width="100px" height="100px">
           card content...
         </Card>
-      </Jello>
+      </SlideInRight>
     </FullView>
   ))
-  .add('Pulse', () => (
+  .add('SlideInUp', () => (
     <FullView center>
-      <Pulse duration="0.8s" delay="0.2s">
+      <SlideInUp duration="0.8s" delay="0.2s">
         <Card rounded width="100px" height="100px">
           card content...
         </Card>
-      </Pulse>
+      </SlideInUp>
     </FullView>
   ))
-  .add('RubberBand', () => (
+  .add('SlideOutDown', () => (
     <FullView center>
-      <RubberBand duration="0.8s" delay="0.2s">
+      <SlideOutDown duration="0.8s" delay="0.2s">
         <Card rounded width="100px" height="100px">
           card content...
         </Card>
-      </RubberBand>
+      </SlideOutDown>
     </FullView>
   ))
-  .add('Shake', () => (
+  .add('SlideOutLeft', () => (
     <FullView center>
-      <Shake duration="0.8s" delay="0.2s">
+      <SlideOutLeft duration="0.8s" delay="0.2s">
         <Card rounded width="100px" height="100px">
           card content...
         </Card>
-      </Shake>
+      </SlideOutLeft>
     </FullView>
   ))
-  .add('Swing', () => (
+  .add('SlideOutRight', () => (
     <FullView center>
-      <Swing duration="0.8s" delay="0.2s">
+      <SlideOutRight duration="0.8s" delay="0.2s">
         <Card rounded width="100px" height="100px">
           card content...
         </Card>
-      </Swing>
+      </SlideOutRight>
     </FullView>
   ))
-  .add('Tada', () => (
+  .add('SlideOutUp', () => (
     <FullView center>
-      <Tada duration="0.8s" delay="0.2s">
+      <SlideOutUp duration="0.8s" delay="0.2s">
         <Card rounded width="100px" height="100px">
           card content...
         </Card>
-      </Tada>
-    </FullView>
-  ))
-  .add('Wobble', () => (
-    <FullView center>
-      <Wobble duration="0.8s" delay="0.2s">
-        <Card rounded width="100px" height="100px">
-          card content...
-        </Card>
-      </Wobble>
+      </SlideOutUp>
     </FullView>
   ));
