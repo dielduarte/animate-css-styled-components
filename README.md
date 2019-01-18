@@ -144,3 +144,5 @@ Example:
 
 now your animation is a styled-component and you can use this like any other styled-component,
 passing the all BaseAnimation [props](https://github.com/dielduarte/animate-css-styled-components#props).
+
+Made with love and styled-components!
