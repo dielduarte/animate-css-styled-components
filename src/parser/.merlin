@@ -1,0 +1,10 @@
+####{BSB GENERATED: NO EDIT
+FLG -ppx '/Users/dielduarte/localhost/animate-css-styled-components/src/parser/node_modules/rescript/darwin/bsc.exe -as-ppx '
+S /Users/dielduarte/localhost/animate-css-styled-components/src/parser/node_modules/rescript/lib/ocaml
+B /Users/dielduarte/localhost/animate-css-styled-components/src/parser/node_modules/rescript/lib/ocaml
+FLG -w +a-4-9-20-40-41-42-50-61-102
+S src
+B lib/bs/src
+S src/bindings
+B lib/bs/src/bindings
+####BSB GENERATED: NO EDIT}
